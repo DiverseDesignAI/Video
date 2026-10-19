@@ -4,7 +4,7 @@ import copy,base64,xml.etree.ElementTree as E
 ROOT=Path(__file__).resolve().parents[1]
 PUB=ROOT/'public'; OUT=PUB/'v7'; OUT.mkdir(exist_ok=True)
 NS='http://www.w3.org/2000/svg'; E.register_namespace('',NS)
-font='@font-face{font-family:Onest;src:url(data:font/ttf;base64,'+base64.b64encode((PUB/'Onest.ttf').read_bytes()).decode()+')}'
+font='@font-face{font-family:Onest;src:url(data:font/ttf;base64,'+base64.b64encode((PUB/'Onest.ttf').read_bytes()).decode()+');font-weight:100 900}'
 def save(name,root): E.ElementTree(root).write(OUT/name,encoding='unicode',xml_declaration=False)
 for state,source in [('active','card-controls.svg'),('frozen','frozen-controls.svg')]:
  root=E.parse(PUB/'v5'/source).getroot()
@@ -35,3 +35,4 @@ for source in ['primary-default','primary-pressed']:
 for source in ['secondary-default','secondary-pressed']:
  root=E.parse(OUT/(source+'.svg')).getroot();style=E.Element(f'{{{NS}}}style');style.text=font;root.insert(0,style);save(source+'-embedded.svg',root)
 print('Prepared original component derivatives with embedded Onest.')
+
