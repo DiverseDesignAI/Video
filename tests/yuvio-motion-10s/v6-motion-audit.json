@@ -1,0 +1,16 @@
+{
+  "frames": 4080,
+  "duration": 68,
+  "bounds": {
+    "minTop": 151.75,
+    "maxBottom": 1344.25,
+    "minLeft": 1061,
+    "maxRight": 2120.175
+  },
+  "maxScaleDelta": 0.007342153548546948,
+  "maxVirtualStep": 0.027934198576082814,
+  "minVirtualStep": 0.018062825654123538,
+  "transaction": "212:840",
+  "blur": "CSS backdrop-filter blur(14px) under original SVG controls",
+  "source": true
+}

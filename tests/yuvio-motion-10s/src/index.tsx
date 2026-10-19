@@ -5,4 +5,4 @@ if(typeof document!=='undefined'){
  const handle=delayRender('Load approved Onest typeface');
  new FontFace('Onest',`url(${staticFile('Onest.ttf')})`,{weight:'100 900'}).load().then(font=>{document.fonts.add(font);continueRender(handle)}).catch(cancelRender);
 }
-registerRoot(()=><Composition id="YuvioMotionTest" component={YuvioV5} width={2560} height={1440} fps={60} durationInFrames={5280}/>);
+registerRoot(()=><Composition id="YuvioMotionTest" component={YuvioV5} width={2560} height={1440} fps={60} durationInFrames={4080}/>);

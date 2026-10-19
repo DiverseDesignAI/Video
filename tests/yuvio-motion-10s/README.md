@@ -1,14 +1,14 @@
 # YUVIO / Product walkthrough
 
-2560 × 1440 · 60 fps · 5,280 frames · 88 seconds · Remotion 4.0.536.
+2560 × 1440 · 60 fps · 4080 frames · 68 seconds · Remotion 4.0.536.
 
 ## Current revision
 
-**V5: 88 seconds, 5,280 frames, 1440p60.** New original-logo intro, iPhone 16 Pro mockup, mobile touch feedback without a cursor, synchronized Freeze / Unfreeze, approved copy, new stereo music and UI sounds, and the current card-focused Transaction Details from **212:840**.
+**V6: 68 seconds, 4080 frames, 1440p60.** Restored live backdrop blur under the card action panel, full-resolution dithered gradient fields, a cleaner device shadow, tighter pacing and varied camera motion. Current Transaction Details remains **212:840**.
 
-See [REVISION-5.md](REVISION-5.md), [V5-BRIEF.md](V5-BRIEF.md), [V5-TRANSACTION-OVERRIDE.md](V5-TRANSACTION-OVERRIDE.md), and [v5-motion-audit.json](v5-motion-audit.json).
+See [REVISION-6.md](REVISION-6.md), [V6-REVISION-NOTES.md](V6-REVISION-NOTES.md), [v6-timeline.json](v6-timeline.json), and [v6-motion-audit.json](v6-motion-audit.json).
 
-Current export: `deliverables/yuvio-walkthrough-v5.mp4`. Main source: `src/YuvioV5.tsx`; interaction timing: `src/motionV5.ts`. Composition ID remains `YuvioMotionTest` for the existing Studio tab. Earlier videos and reports are historical; they do not describe the current V5 transaction screen.
+Current delivery: `deliverables/yuvio-walkthrough-v6.mp4`. The ProRes intermediate is local; the additional 10-bit HEVC delivery is encoded from it. Existing V5 component filenames are retained inside the project; src/motionV6.ts owns the new clock/camera and public/v6 owns the new background/audio. Earlier reports and videos are archival.
 
 ## Original scope
 
