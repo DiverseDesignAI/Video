@@ -1,0 +1,27 @@
+{
+  "captionEntries": 16,
+  "headingPixels": 112,
+  "descriptionPixels": 42,
+  "browserMeasuredOverflow": false,
+  "introHoldPixelIdentical": true,
+  "introHoldFramesCompared": [
+    132,
+    240
+  ],
+  "keyFramesInspected": 38,
+  "additionalFinalChecks": [
+    630,
+    743,
+    2626,
+    2788,
+    3065
+  ],
+  "frozenSequenceMasterTestFrames": 246,
+  "testH264Bitrate": 29730058,
+  "systemIndicators": "Fixed above routed page transforms",
+  "freezePressEndsAtStateChange": true,
+  "realtimePreviewObservedFPS": [
+    58.9,
+    62.3
+  ]
+}

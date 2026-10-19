@@ -10,12 +10,13 @@
   },
   "scripts": {
     "preview": "remotion studio src/index.tsx",
-    "render": "remotion render src/index.tsx YuvioMotionTest out/yuvio-walkthrough-v6.mp4 --crf=10 --image-format=png --color-space=bt709 --audio-bitrate=320k",
+    "render": "remotion render src/index.tsx YuvioMotionTest out/yuvio-walkthrough-v7.mp4 --video-bitrate=30M --image-format=png --color-space=bt709 --audio-bitrate=320k",
     "audit:v5": "node tools/audit_v5.cjs",
-    "audit:v6": "node tools/audit_v6.cjs"
+    "audit:v6": "node tools/audit_v6.cjs",
+    "render:master": "remotion render src/index.tsx YuvioMotionTest out/yuvio-v7-master.mkv --codec=prores --prores-profile=hq --audio-codec=pcm-16 --pixel-format=yuv422p10le --image-format=png --color-space=bt709",
+    "audit:v7": "node tools/audit_v7.cjs"
   },
   "allowScripts": {
     "esbuild@0.28.1": true
   }
 }
-

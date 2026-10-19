@@ -1,4 +1,4 @@
-import {ramp,window,dragEase,routes,taps as tapsV5} from './motionV5';
+import {ramp,window,dragEase,routes,taps as tapsV5,frozenState as frozenV5} from './motionV5';
 export {ramp,window,dragEase,routes,frostProgress,frozenState} from './motionV5';
 export type {Page,Route,Tap} from './motionV5';
 export const DURATION_V7=68;
@@ -12,6 +12,7 @@ export const realTimeV7=(t:number)=>{let a=0,b=DURATION_V7;for(let i=0;i<50;i++)
 export const PRESS_SECONDS=.16;
 export const taps=tapsV5.map(tap=>{const destination=routes.find(r=>r.at>tap.at&&r.at-tap.at<.3);const at=destination?timeV7(realTimeV7(destination.at)-.18):tap.at;return {...tap,at};});
 export const pressAt=(t:number,at:number)=>{const age=realTimeV7(t)-realTimeV7(at);return age>=0&&age<PRESS_SECONDS?Math.sin(age/PRESS_SECONDS*Math.PI):0;};
+export const cardPressAt=(t:number,at:number)=>frozenV5(t)===frozenV5(at)?pressAt(t,at):0;
 export const recipientSlides=[{img:'dmitriy',name:'Dmitriy Pestov'},{img:'nikita',name:'Nikita Zhuravlev'},{img:'angelina',name:'Angelina Firsova'}];
 export const recipientDrags=[[10.0,10.8],[12.05,12.85]];
 export const recipientProgress=(t:number)=>recipientDrags.reduce((p,[a,b])=>p+ramp(t,a,b,0,1,dragEase),0);

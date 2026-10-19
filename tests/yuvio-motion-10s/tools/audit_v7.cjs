@@ -13,6 +13,7 @@ for(let f=0;f<4080;f++){
 for(const tap of v.taps){const at=v.realTimeV7(tap.at);if(v.pressAt(v.timeV7(at+.08),tap.at)<.99)throw Error('Missing press peak');if(v.pressAt(v.timeV7(at+.17),tap.at)!==0)throw Error('Stuck pressed');}
 if(v.recipientDrags.length!==2||v.recipientProgress(13.5)!==2||v.recipientSlides[2].img!=='angelina')throw Error('Recipient selection mismatch');
 for(const c of v.captionData){if(c.title.length>3||c.sub.length>2)throw Error('Too many lines');for(const line of c.title)if(/\b(and|or|the|to|a|at|in|of|with)$/i.test(line))throw Error('Dangling connective: '+line);}
+const freeze=v.taps.find(a=>a.page==='card'&&a.at<58);if(v.cardPressAt(56.45,freeze.at)!==0)throw Error('Freeze press leaks into Unfreeze state');
 const timeline=v.captionData.map(c=>({start:v.realTimeV7(c.a),end:v.realTimeV7(c.b),frame:Math.round(v.realTimeV7((c.a+c.b)/2)*60),title:c.title,description:c.sub}));
 fs.writeFileSync(path.join(root,'v7-timeline.json'),JSON.stringify(timeline,null,2));
 fs.writeFileSync(path.join(root,'v7-cues.json'),JSON.stringify({taps:v.taps.map(a=>({...a,real:v.realTimeV7(a.at)})),routes:v.routes.map(r=>({...r,real:v.realTimeV7(r.at)})),swipes:v.recipientDrags.map(([a,b])=>[v.realTimeV7(a),v.realTimeV7(b)])},null,2));
