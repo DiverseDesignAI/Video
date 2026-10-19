@@ -1,0 +1,18 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="1016" height="547" viewBox="0 0 1016 547" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Vector artwork / Two ribbon shapes" clip-path="url(#clip0_0_4)">
+<path id="left-ribbon" d="M12 1H188C258 1 302 31 341 79L506 280L393 412C365 451 335 455 309 427L2 26C-6 14 2.86102e-06 1 12 1Z" fill="url(#paint0_linear_0_4)"/>
+<path id="right-ribbon" d="M309 427C336 459 365 448 397 410L676 71C714 23 765 0 825 0H998C1012 0 1019 10 1011 23L674 466C628 528 570 545 510 545C430 545 364 507 309 427Z" fill="white"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0_4" x1="71" y1="-45" x2="394" y2="458" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="0.24" stop-color="#FCFCFE"/>
+<stop offset="0.48" stop-color="#EFF0F5"/>
+<stop offset="0.72" stop-color="#D9DAE3"/>
+<stop offset="1" stop-color="#BCBFCE"/>
+</linearGradient>
+<clipPath id="clip0_0_4">
+<rect width="1016" height="547" fill="white"/>
+</clipPath>
+</defs>
+</svg>

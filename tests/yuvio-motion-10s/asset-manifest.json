@@ -1,0 +1,15 @@
+{
+  "figmaFileKey": "xdHhVrICh4tuIjB1bTbsxh",
+  "screens": {
+    "home.png": "53:1562",
+    "recipient.png": "122:459",
+    "send.png": "163:574"
+  },
+  "scale": 4,
+  "canvas": {
+    "width": 2560,
+    "height": 1440,
+    "fps": 60,
+    "frames": 600
+  }
+}
