@@ -36,3 +36,19 @@ for source in ['secondary-default','secondary-pressed']:
  root=E.parse(OUT/(source+'.svg')).getroot();style=E.Element(f'{{{NS}}}style');style.text=font;root.insert(0,style);save(source+'-embedded.svg',root)
 print('Prepared original component derivatives with embedded Onest.')
 
+# Fresh UI-10 exports: the active Freeze surface is neutral, not selected purple.
+# Keep unique URLs so Studio cannot reuse cached previous-revision images.
+for i in range(3):
+ source=OUT/f'card-current-action-{i}.svg'
+ if not source.exists(): continue
+ current=E.parse(source).getroot()
+ for pressed in [False,True]:
+  tile=copy.deepcopy(current)
+  if pressed:
+   body=E.Element(f'{{{NS}}}g',{'opacity':'.72'})
+   for child in list(tile):
+    if child.tag!=f'{{{NS}}}defs': tile.remove(child);body.append(child)
+   for child in body.iter(): child.attrib.pop('filter',None)
+   tile.append(body)
+  save(f'active-current-action-{i}'+('-pressed' if pressed else '')+'.svg',tile)
+

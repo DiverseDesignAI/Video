@@ -22,20 +22,20 @@ export const cameraV7=(t:number)=>{
  return {scale:1.25+.14*Math.max(important,card)+.09*qr,cx:1840-16*lateral+10*detail,cy:730-6*tx};
 };
 export const captionData=[
- {a:4,b:8.95,title:['Three currencies.','One wallet.'],sub:['Manage USD, RUB and USDT in one place.']},
- {a:9,b:14.05,title:['Choose','the right person.'],sub:['Find a contact and start your transfer.']},
+ {a:4,b:8.95,title:['Three currencies.','One wallet.'],sub:['Manage USD, RUB and USDT','in one place.']},
+ {a:9,b:14.05,title:['Choose','the right person.'],sub:['Find a contact','and start your transfer.']},
  {a:14.1,b:19.95,title:['Know the cost','before you send.'],sub:['See the exchange rate, fees','and total upfront.']},
  {a:20,b:24.35,title:['Your transfer','is on its way.'],sub:['Track the payment while','the recipient bank processes it.']},
  {a:24.4,b:32.35,title:['Receive','with QR.'],sub:['Share your code to receive money.']},
- {a:32.4,b:39.95,title:['Exchange','with clarity.'],sub:['See the rate and fees before confirming.']},
- {a:40,b:44.05,title:['Converted.','Ready to use.'],sub:['Your exchanged funds are available in RUB.']},
+ {a:32.4,b:39.95,title:['Exchange','with clarity.'],sub:['See the rate and fees','before confirming.']},
+ {a:40,b:44.05,title:['Converted.','Ready to use.'],sub:['Your exchanged funds','are available in RUB.']},
  {a:44.1,b:49.5,title:['Every detail,','on record.'],sub:['Review and save your exchange receipt.']},
  {a:49.55,b:56.35,title:['Your card.','Your control.'],sub:['Manage your virtual card and spending.']},
  {a:56.4,b:59.85,title:['Freeze your card.','Keep control.'],sub:['Pause card payments','and unfreeze when needed.']},
  {a:59.9,b:62.1,title:['Your card.','Your control.'],sub:['Manage your virtual card and spending.']},
  {a:62.15,b:68.05,title:['Card details,','protected.'],sub:['Verify your identity before revealing','sensitive information.']},
- {a:68.1,b:70.65,title:['Every transaction,','in view.'],sub:['Explore payments, transfers and exchanges.']},
+ {a:68.1,b:70.65,title:['Transactions.','All in view.'],sub:['Explore payments, transfers','and exchanges.']},
  {a:70.7,b:75,title:['Every payment.','Every detail.'],sub:['Review the amount, status','and payment information.']},
  {a:75.05,b:78.25,title:['Your account.','Your settings.'],sub:['Manage personal details and security.']},
- {a:78.3,b:82.25,title:['Security','at a glance.'],sub:['Set up Face ID for faster, protected access.']},
+ {a:78.3,b:82.25,title:['Security','at a glance.'],sub:['Set up Face ID for faster,','protected access.']},
 ];

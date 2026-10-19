@@ -1,0 +1,11 @@
+{
+  "frames": 4080,
+  "visibleFrames": 1138,
+  "taps": 19,
+  "contactDrags": 2,
+  "confirmationDrags": 2,
+  "confirmationTravel": 300,
+  "tipAnchored": true,
+  "passiveSamples": 13,
+  "status": "passed"
+}

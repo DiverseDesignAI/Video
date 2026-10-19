@@ -8,7 +8,8 @@
       "One wallet."
     ],
     "description": [
-      "Manage USD, RUB and USDT in one place."
+      "Manage USD, RUB and USDT",
+      "in one place."
     ]
   },
   {
@@ -20,7 +21,8 @@
       "the right person."
     ],
     "description": [
-      "Find a contact and start your transfer."
+      "Find a contact",
+      "and start your transfer."
     ]
   },
   {
@@ -70,7 +72,8 @@
       "with clarity."
     ],
     "description": [
-      "See the rate and fees before confirming."
+      "See the rate and fees",
+      "before confirming."
     ]
   },
   {
@@ -82,7 +85,8 @@
       "Ready to use."
     ],
     "description": [
-      "Your exchanged funds are available in RUB."
+      "Your exchanged funds",
+      "are available in RUB."
     ]
   },
   {
@@ -152,11 +156,12 @@
     "end": 53.373912993239415,
     "frame": 3143,
     "title": [
-      "Every transaction,",
-      "in view."
+      "Transactions.",
+      "All in view."
     ],
     "description": [
-      "Explore payments, transfers and exchanges."
+      "Explore payments, transfers",
+      "and exchanges."
     ]
   },
   {
@@ -193,7 +198,8 @@
       "at a glance."
     ],
     "description": [
-      "Set up Face ID for faster, protected access."
+      "Set up Face ID for faster,",
+      "protected access."
     ]
   }
 ]
