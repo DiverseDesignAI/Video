@@ -51,3 +51,7 @@ The final picture retains unaffected ProRes master frames and replaces only the 
 - Encoded audio: -16.008 LUFS integrated, -4.725 dBTP; stereo 48 kHz.
 - Reviewed 22 final encoded samples covering the full flow, including early receipt entry, Freeze/Unfreeze and current YUVIO Transaction Details.
 - SHA-256 and stream metadata: v7-export-validation.json.
+
+## Local cleanup after publication
+
+After GitHub upload and HTTP size verification of both video files, removed local V6/V7 working masters, ProRes refinement chunks, temporary PNG sequences, QA captures and nine verified duplicate output MP4s. Editable source assets and dependencies are retained. The local checkout excludes deliverables/ through Git sparse checkout; the published videos remain on GitHub. Restore that folder with git sparse-checkout disable and git lfs pull when needed.
