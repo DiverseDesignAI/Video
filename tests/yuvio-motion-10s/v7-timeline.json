@@ -1,0 +1,199 @@
+[
+  {
+    "start": 5.299999999999981,
+    "end": 8.4135624742328,
+    "frame": 416,
+    "title": [
+      "Three currencies.",
+      "One wallet."
+    ],
+    "description": [
+      "Manage USD, RUB and USDT in one place."
+    ]
+  },
+  {
+    "start": 8.450000000000015,
+    "end": 12.691864004227286,
+    "frame": 630,
+    "title": [
+      "Choose",
+      "the right person."
+    ],
+    "description": [
+      "Find a contact and start your transfer."
+    ]
+  },
+  {
+    "start": 12.733788441043425,
+    "end": 17.611929678344204,
+    "frame": 914,
+    "title": [
+      "Know the cost",
+      "before you send."
+    ],
+    "description": [
+      "See the exchange rate, fees",
+      "and total upfront."
+    ]
+  },
+  {
+    "start": 17.649999999999984,
+    "end": 20.64510777520124,
+    "frame": 1150,
+    "title": [
+      "Your transfer",
+      "is on its way."
+    ],
+    "description": [
+      "Track the payment while",
+      "the recipient bank processes it."
+    ]
+  },
+  {
+    "start": 20.680141433106435,
+    "end": 26.357016957002635,
+    "frame": 1409,
+    "title": [
+      "Receive",
+      "with QR."
+    ],
+    "description": [
+      "Share your code to receive money."
+    ]
+  },
+  {
+    "start": 26.39390479155812,
+    "end": 32.064348749978464,
+    "frame": 1755,
+    "title": [
+      "Exchange",
+      "with clarity."
+    ],
+    "description": [
+      "See the rate and fees before confirming."
+    ]
+  },
+  {
+    "start": 32.10000000000001,
+    "end": 34.83592586057921,
+    "frame": 2008,
+    "title": [
+      "Converted.",
+      "Ready to use."
+    ],
+    "description": [
+      "Your exchanged funds are available in RUB."
+    ]
+  },
+  {
+    "start": 34.871952791599625,
+    "end": 38.961903304926594,
+    "frame": 2216,
+    "title": [
+      "Every detail,",
+      "on record."
+    ],
+    "description": [
+      "Review and save your exchange receipt."
+    ]
+  },
+  {
+    "start": 38.99777757980486,
+    "end": 43.75655380384991,
+    "frame": 2482,
+    "title": [
+      "Your card.",
+      "Your control."
+    ],
+    "description": [
+      "Manage your virtual card and spending."
+    ]
+  },
+  {
+    "start": 43.7936466433447,
+    "end": 46.46843943521672,
+    "frame": 2707,
+    "title": [
+      "Freeze your card.",
+      "Keep control."
+    ],
+    "description": [
+      "Pause card payments",
+      "and unfreeze when needed."
+    ]
+  },
+  {
+    "start": 46.50640510152884,
+    "end": 48.06517768262225,
+    "frame": 2839,
+    "title": [
+      "Your card.",
+      "Your control."
+    ],
+    "description": [
+      "Manage your virtual card and spending."
+    ]
+  },
+  {
+    "start": 48.097298608115764,
+    "end": 51.4345744569208,
+    "frame": 2984,
+    "title": [
+      "Card details,",
+      "protected."
+    ],
+    "description": [
+      "Verify your identity before revealing",
+      "sensitive information."
+    ]
+  },
+  {
+    "start": 51.46925034274568,
+    "end": 53.373912993239415,
+    "frame": 3143,
+    "title": [
+      "Every transaction,",
+      "in view."
+    ],
+    "description": [
+      "Explore payments, transfers and exchanges."
+    ]
+  },
+  {
+    "start": 53.413884990191434,
+    "end": 57.09999999999998,
+    "frame": 3313,
+    "title": [
+      "Every payment.",
+      "Every detail."
+    ],
+    "description": [
+      "Review the amount, status",
+      "and payment information."
+    ]
+  },
+  {
+    "start": 57.14400546367635,
+    "end": 60.20606543743624,
+    "frame": 3518,
+    "title": [
+      "Your account.",
+      "Your settings."
+    ],
+    "description": [
+      "Manage personal details and security."
+    ]
+  },
+  {
+    "start": 60.25587662325316,
+    "end": 63.90444549111557,
+    "frame": 3731,
+    "title": [
+      "Security",
+      "at a glance."
+    ],
+    "description": [
+      "Set up Face ID for faster, protected access."
+    ]
+  }
+]

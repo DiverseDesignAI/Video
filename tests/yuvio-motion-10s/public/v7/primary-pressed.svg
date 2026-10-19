@@ -1,0 +1,16 @@
+<svg width="354" height="52" viewBox="0 0 354 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Style=Primary, State=Pressed" opacity="0.8">
+<rect width="354" height="52" rx="15" fill="url(#paint0_linear_316_702)"/>
+<rect x="0.5" y="0.5" width="353" height="51" rx="14.5" stroke="#D0C8F1" stroke-opacity="0.39"/>
+<text id="Action / Done label" fill="white" style="white-space: pre" xml:space="preserve" font-family="Onest" font-size="14" font-weight="600" letter-spacing="0em"><tspan x="160" y="29.655">Done</tspan></text>
+</g>
+<defs>
+<linearGradient id="paint0_linear_316_702" x1="-44.7665" y1="20.9922" x2="32.1135" y2="184.941" gradientUnits="userSpaceOnUse">
+<stop stop-color="#AE9FFF"/>
+<stop offset="0.42" stop-color="#806FE9"/>
+<stop offset="0.82" stop-color="#6150CE"/>
+<stop offset="1" stop-color="#45369A"/>
+</linearGradient>
+</defs>
+</svg>
+

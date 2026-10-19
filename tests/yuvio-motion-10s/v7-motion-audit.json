@@ -1,0 +1,21 @@
+{
+  "frames": 4080,
+  "seconds": 68,
+  "introHold": [
+    2.2,
+    4.2
+  ],
+  "homeReady": 5.3,
+  "pressSeconds": 0.16,
+  "contactSwitches": 2,
+  "selectedRecipient": "Angelina Firsova",
+  "transactionFrame": "212:840",
+  "bounds": {
+    "top": 104.5,
+    "bottom": 1355.5,
+    "left": 1061,
+    "right": 2144.41
+  },
+  "maxScaleStep": 0.010049427282014411,
+  "checks": "passed"
+}

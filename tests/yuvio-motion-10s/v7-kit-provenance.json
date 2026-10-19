@@ -1,0 +1,272 @@
+{
+  "fileKey": "xdHhVrICh4tuIjB1bTbsxh",
+  "assets": [
+    {
+      "name": "primary-default",
+      "id": "316:699"
+    },
+    {
+      "name": "primary-pressed",
+      "id": "316:702"
+    },
+    {
+      "name": "secondary-default",
+      "id": "316:715"
+    },
+    {
+      "name": "secondary-pressed",
+      "id": "316:718"
+    },
+    {
+      "name": "back-pressed",
+      "id": "316:742"
+    }
+  ],
+  "tokens": [
+    {
+      "id": "316:702",
+      "name": "Style=Primary, State=Pressed",
+      "opacity": 0.800000011920929,
+      "fills": [
+        {
+          "type": "GRADIENT_LINEAR",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "gradientStops": [
+            {
+              "color": {
+                "r": 0.6823529601097107,
+                "g": 0.6235294342041016,
+                "b": 1,
+                "a": 1
+              },
+              "position": 0,
+              "boundVariables": {}
+            },
+            {
+              "color": {
+                "r": 0.501960813999176,
+                "g": 0.43529412150382996,
+                "b": 0.9137254953384399,
+                "a": 1
+              },
+              "position": 0.41999998688697815,
+              "boundVariables": {}
+            },
+            {
+              "color": {
+                "r": 0.3803921639919281,
+                "g": 0.3137255012989044,
+                "b": 0.8078431487083435,
+                "a": 1
+              },
+              "position": 0.8199999928474426,
+              "boundVariables": {}
+            },
+            {
+              "color": {
+                "r": 0.2705882489681244,
+                "g": 0.21176470816135406,
+                "b": 0.6039215922355652,
+                "a": 1
+              },
+              "position": 1,
+              "boundVariables": {}
+            }
+          ],
+          "gradientTransform": [
+            [
+              0.8299999833106995,
+              0.25999999046325684,
+              0
+            ],
+            [
+              -0.28999999165534973,
+              0.8999999761581421,
+              0.10000000149011612
+            ]
+          ]
+        }
+      ],
+      "effects": [],
+      "cornerRadius": 15
+    },
+    {
+      "id": "316:718",
+      "name": "Style=Secondary, State=Pressed",
+      "opacity": 0.800000011920929,
+      "fills": [
+        {
+          "type": "GRADIENT_LINEAR",
+          "visible": true,
+          "opacity": 0.3199999928474426,
+          "blendMode": "NORMAL",
+          "gradientStops": [
+            {
+              "color": {
+                "r": 0.21960784494876862,
+                "g": 0.20000000298023224,
+                "b": 0.2862745225429535,
+                "a": 1
+              },
+              "position": 0,
+              "boundVariables": {}
+            },
+            {
+              "color": {
+                "r": 0.10588235408067703,
+                "g": 0.125490203499794,
+                "b": 0.20000000298023224,
+                "a": 1
+              },
+              "position": 1,
+              "boundVariables": {}
+            }
+          ],
+          "gradientTransform": [
+            [
+              0.8399999737739563,
+              0.18000000715255737,
+              0
+            ],
+            [
+              -0.25999999046325684,
+              0.9200000166893005,
+              0.11999999731779099
+            ]
+          ]
+        }
+      ],
+      "effects": [],
+      "cornerRadius": 14
+    },
+    {
+      "id": "316:742",
+      "name": "Action=Back, State=Pressed",
+      "opacity": 1,
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.2235294133424759,
+            "g": 0.20392157137393951,
+            "b": 0.3333333432674408
+          },
+          "boundVariables": {}
+        }
+      ],
+      "effects": [],
+      "cornerRadius": 22
+    },
+    {
+      "id": "322:756",
+      "name": "Action=Details, State=Pressed",
+      "opacity": 0.7200000286102295,
+      "fills": [
+        {
+          "type": "GRADIENT_LINEAR",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "gradientStops": [
+            {
+              "color": {
+                "r": 0.20392157137393951,
+                "g": 0.20392157137393951,
+                "b": 0.2980392277240753,
+                "a": 0.46000000834465027
+              },
+              "position": 0,
+              "boundVariables": {}
+            },
+            {
+              "color": {
+                "r": 0.10588235408067703,
+                "g": 0.11372549086809158,
+                "b": 0.18039216101169586,
+                "a": 0.33000001311302185
+              },
+              "position": 1,
+              "boundVariables": {}
+            }
+          ],
+          "gradientTransform": [
+            [
+              0.8600000143051147,
+              0.3100000023841858,
+              0
+            ],
+            [
+              -0.25999999046325684,
+              0.9100000262260437,
+              0.09000000357627869
+            ]
+          ]
+        }
+      ],
+      "effects": [],
+      "cornerRadius": 17
+    },
+    {
+      "id": "322:761",
+      "name": "Action=Freeze, State=Pressed",
+      "opacity": 0.7200000286102295,
+      "fills": [
+        {
+          "type": "GRADIENT_LINEAR",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "gradientStops": [
+            {
+              "color": {
+                "r": 0.20392157137393951,
+                "g": 0.20392157137393951,
+                "b": 0.2980392277240753,
+                "a": 0.46000000834465027
+              },
+              "position": 0,
+              "boundVariables": {}
+            },
+            {
+              "color": {
+                "r": 0.10588235408067703,
+                "g": 0.11372549086809158,
+                "b": 0.18039216101169586,
+                "a": 0.33000001311302185
+              },
+              "position": 1,
+              "boundVariables": {}
+            }
+          ],
+          "gradientTransform": [
+            [
+              0.8600000143051147,
+              0.3100000023841858,
+              0
+            ],
+            [
+              -0.25999999046325684,
+              0.9100000262260437,
+              0.09000000357627869
+            ]
+          ]
+        }
+      ],
+      "effects": [],
+      "cornerRadius": 17
+    },
+    {
+      "id": "320:896",
+      "name": "YUVIO / Bottom Navigation",
+      "opacity": 1,
+      "fills": [],
+      "effects": [],
+      "cornerRadius": 5
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+<svg width="354" height="46" viewBox="0 0 354 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Style=Secondary, State=Pressed" opacity="0.8">
+<rect width="354" height="46" rx="14" fill="url(#paint0_linear_316_718)" fill-opacity="0.32"/>
+<rect x="0.5" y="0.5" width="353" height="45" rx="13.5" stroke="#BEB6DB" stroke-opacity="0.17"/>
+<text id="Action / Receipt label" fill="#F0ECFF" style="white-space: pre" xml:space="preserve" font-family="Onest" font-size="13" font-weight="500" letter-spacing="0em"><tspan x="152" y="27.3225">View receipt</tspan></text>
+<g id="Action / Receipt icon">
+<path id="Vector" d="M129.25 16.5H138.75V29.4L136.75 28.25L134.5 29.4L132.25 28.25L129.25 29.4V16.5Z" stroke="#E8E0FF" stroke-width="1.35" stroke-linejoin="round"/>
+<path id="Vector_2" d="M131.75 20.5H136.25M131.75 23.4H136.25" stroke="#E8E0FF" stroke-width="1.25" stroke-linecap="round"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_316_718" x1="-29.5432" y1="17.9151" x2="83.7615" y2="204.762" gradientUnits="userSpaceOnUse">
+<stop stop-color="#383349"/>
+<stop offset="1" stop-color="#1B2033"/>
+</linearGradient>
+</defs>
+</svg>
+
