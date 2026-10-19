@@ -35,3 +35,13 @@ No received-payment success, revealed card numbers, completed Face ID setup, fil
 Most UI content remains exported pixels, with animated interaction layers. This is a product film demonstration, not a working banking application. Freeze uses a masked reveal of the supplied frost asset, not a new procedural ice simulation. The brief's optional Face ID contour was omitted to preserve the original image.
 
 Earlier MP4 revisions remain in deliverables/. Sources of the approved opening remain in Git history.
+
+## Final export validation
+
+- H.264 video / AAC audio; 2560×1440, 60/1 FPS, 4,440 video frames.
+- Video duration 74 seconds; container duration 74.005 seconds; 61,182,746 bytes.
+- Entire file decoded successfully with the bundled FFmpeg, using rawvideo / PCM output to the null muxer. Its default wrapped_avframe output is disabled, so explicit output codecs were required for that check.
+- Inspected 17 decoded frames covering the opening/continuation boundary, QR focus, exchange drag, settlement, receipt reveal, freeze/unfreeze, hidden card fields, activity, Netflix details, profile, Face ID off, profile return and the final hold.
+- The adjacent decoded frames at 14.983 s and 15.000 s have a mean per-channel pixel difference below 0.3/255, consistent with a continuous composition at the boundary.
+- Asset dimensions checked for all 11 new screens; all are 4× exports. Layer SVGs parsed successfully and runtime assets are local.
+- Remaining review item is creative feedback and the user's final left-side copy; no missing screen states were invented.

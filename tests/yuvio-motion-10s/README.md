@@ -1,6 +1,6 @@
-# YUVIO / 10-second motion test
+# YUVIO / Product walkthrough
 
-2560 × 1440 · 60 fps · 600 frames · Remotion 4.0.536.
+2560 × 1440 · 60 fps · 4,440 frames · 74 seconds · Remotion 4.0.536.
 
 ## Current revision
 
