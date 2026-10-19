@@ -1,6 +1,6 @@
 # YUVIO / Product walkthrough
 
-2560 Г— 1440 В· 60 fps В· 4080 frames В· 68 seconds В· Remotion 4.0.536.
+2560 Р“вЂ” 1440 Р’В· 60 fps Р’В· 4080 frames Р’В· 68 seconds Р’В· Remotion 4.0.536.
 
 ## Current revision
 
@@ -8,15 +8,15 @@
 
 See [REVISION-7.md](REVISION-7.md), [V7-REVISION-NOTES.md](V7-REVISION-NOTES.md), [v7-timeline.json](v7-timeline.json), [v7-source-qa.json](v7-source-qa.json), and [v7-motion-audit.json](v7-motion-audit.json).
 
-Delivery export is in progress. H.264 targets 30 Mbit/s; an additional high-quality HEVC Main 10 copy is encoded from the same working master. Final measurements are recorded in v7-export-validation.json after export. Large V7 videos use Git LFS; browser download links provide the actual video.
+Delivery validated: H.264 is 29.912 Mbit/s (257.1 MB); the HEVC Main 10 copy is 31.9 MB. Both are 68.000 seconds, 4080 frames, BT.709 SDR, and pass complete video/audio decoding. Encoded audio is -16.008 LUFS / -4.725 dBTP. See v7-export-validation.json. Large V7 videos use Git LFS; browser download links provide the actual video.
 
 The live composition is still named YuvioMotionTest to preserve the existing Studio link. Its entry point is src/YuvioV7.tsx; V5/V6 sources are retained as prior revisions.
 
 ## Original 10-second test (historical)
 
-Home в†’ tap Send в†’ select Nikita в†’ show amount and fees в†’ slide to confirm. This is an animation test, not a functioning banking app. It ends on the confirmed control, before the unresolved Transfer Sent / Completed screen.
+Home РІвЂ вЂ™ tap Send РІвЂ вЂ™ select Nikita РІвЂ вЂ™ show amount and fees РІвЂ вЂ™ slide to confirm. This is an animation test, not a functioning banking app. It ends on the confirmed control, before the unresolved Transfer Sent / Completed screen.
 
-The three full-screen images are genuine Figma exports at 4Г— (1608 Г— 3496). Screen transitions, camera motion, tap feedback and the confirmation thumb are animated separately. Most internal UI layers remain raster images; this does not yet implement an entirely live UI. The small confirmation track is reconstructed from the original Figma geometry and paints; its thumb is an original vector export. No Figma nodes were changed.
+The three full-screen images are genuine Figma exports at 4Р“вЂ” (1608 Р“вЂ” 3496). Screen transitions, camera motion, tap feedback and the confirmation thumb are animated separately. Most internal UI layers remain raster images; this does not yet implement an entirely live UI. The small confirmation track is reconstructed from the original Figma geometry and paints; its thumb is an original vector export. No Figma nodes were changed.
 
 ## Initial source assets (historical)
 
@@ -44,5 +44,5 @@ On this Windows machine the existing Chrome executable is C:/Program Files/Googl
 
 - A moderate camera move rather than elaborate 3D staging.
 - Values are the prepared Figma state; amount entry and recalculation are not demonstrated.
-- No claim of settled transfer or enabled biometrics.
+- Original prepared Figma transaction data and Face ID off state are preserved.
 - The first run included setup and Figma-export troubleshooting, so its total elapsed time is not a clean measure of subsequent render time.

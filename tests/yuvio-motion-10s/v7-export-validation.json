@@ -1,0 +1,104 @@
+{
+  "sourceCommit": "6d8422ec3925f0e474ac8ad292629e744ae838f5",
+  "deliveries": {
+    "yuvio-walkthrough-v7.mp4": {
+      "bytes": 257100642,
+      "duration": "68.000000",
+      "sha256": "9b6be42acb87f3aee2761a8446b3e87eeaacc02a4fc73f750bf4ef768ca79020",
+      "video": {
+        "codec_name": "h264",
+        "profile": "100",
+        "width": 2560,
+        "height": 1440,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "60/1",
+        "nb_frames": "4080",
+        "bit_rate": "29912100",
+        "color_space": "bt709",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709"
+      },
+      "fullDecode": "passed"
+    },
+    "yuvio-walkthrough-v7-10bit.mp4": {
+      "bytes": 31890884,
+      "duration": "68.000000",
+      "sha256": "d6e43a355fef6407c236786fd6ef4c1d29052ecb6ac0c646cc9cafa53ec1b064",
+      "video": {
+        "codec_name": "hevc",
+        "profile": "Main 10",
+        "width": 2560,
+        "height": 1440,
+        "pix_fmt": "yuv420p10le",
+        "r_frame_rate": "60/1",
+        "nb_frames": "4080",
+        "bit_rate": "3416821",
+        "color_space": "bt709",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709"
+      },
+      "fullDecode": "passed"
+    }
+  },
+  "audio": {
+    "sampleRate": 48000,
+    "integratedLUFS": -16.008174339782915,
+    "truePeakDBTP": -4.724673922233951
+  },
+  "backgrounds": {
+    "intro": {
+      "width": 2560,
+      "height": 1440,
+      "sourceBitDepth": 16,
+      "colorType": "RGB"
+    },
+    "normal": {
+      "width": 2560,
+      "height": 1440,
+      "sourceBitDepth": 16,
+      "colorType": "RGB"
+    },
+    "qr": {
+      "width": 2560,
+      "height": 1440,
+      "sourceBitDepth": 16,
+      "colorType": "RGB"
+    },
+    "cold": {
+      "width": 2560,
+      "height": 1440,
+      "sourceBitDepth": 16,
+      "colorType": "RGB"
+    },
+    "outro": {
+      "width": 2560,
+      "height": 1440,
+      "sourceBitDepth": 16,
+      "colorType": "RGB"
+    }
+  },
+  "sampledFrames": [
+    3.2,
+    6.9,
+    9.6,
+    12.38,
+    15.2,
+    19.2,
+    23.5,
+    29.2,
+    33.45,
+    34.65,
+    36.9,
+    41.4,
+    43.77,
+    45.1,
+    46.47,
+    47.5,
+    49.8,
+    52.4,
+    55.2,
+    58.6,
+    62.2,
+    66.5
+  ]
+}
