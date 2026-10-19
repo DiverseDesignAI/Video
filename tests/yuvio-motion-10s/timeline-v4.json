@@ -1,0 +1,52 @@
+[
+  {
+    "startSeconds": 0,
+    "endSeconds": 15,
+    "scene": "Approved opening: transfer to Angelina and Home"
+  },
+  {
+    "startSeconds": 15,
+    "endSeconds": 21.6,
+    "scene": "Receive / original QR / Back"
+  },
+  {
+    "startSeconds": 21.6,
+    "endSeconds": 29.1,
+    "scene": "Exchange / USD to RUB / drag confirmation"
+  },
+  {
+    "startSeconds": 29.1,
+    "endSeconds": 33.3,
+    "scene": "Exchange Success / status and settlement layers"
+  },
+  {
+    "startSeconds": 33.3,
+    "endSeconds": 39.6,
+    "scene": "Receipt / paper reveal / Go home"
+  },
+  {
+    "startSeconds": 39.6,
+    "endSeconds": 45.9,
+    "scene": "Card / Freeze / Unfreeze"
+  },
+  {
+    "startSeconds": 45.9,
+    "endSeconds": 51.7,
+    "scene": "Card Details / masked fields / Back"
+  },
+  {
+    "startSeconds": 51.7,
+    "endSeconds": 59.7,
+    "scene": "Activity / Netflix / Payment details / Back"
+  },
+  {
+    "startSeconds": 59.7,
+    "endSeconds": 66.9,
+    "scene": "Profile / Face ID off / Not now"
+  },
+  {
+    "startSeconds": 66.9,
+    "endSeconds": 74,
+    "scene": "Profile return / three-device brand ending"
+  }
+]

@@ -1,0 +1,90 @@
+[
+  {
+    "nodeId": "126:470",
+    "file": "public/receive.png",
+    "scale": 4,
+    "width": 1608,
+    "height": 3496,
+    "fileKey": "xdHhVrICh4tuIjB1bTbsxh"
+  },
+  {
+    "nodeId": "163:688",
+    "file": "public/exchange.png",
+    "scale": 4,
+    "width": 1608,
+    "height": 3496,
+    "fileKey": "xdHhVrICh4tuIjB1bTbsxh"
+  },
+  {
+    "nodeId": "175:641",
+    "file": "public/exchange-success.png",
+    "scale": 4,
+    "width": 1608,
+    "height": 3496,
+    "fileKey": "xdHhVrICh4tuIjB1bTbsxh"
+  },
+  {
+    "nodeId": "245:675",
+    "file": "public/receipt.png",
+    "scale": 4,
+    "width": 1608,
+    "height": 3496,
+    "fileKey": "xdHhVrICh4tuIjB1bTbsxh"
+  },
+  {
+    "nodeId": "90:437",
+    "file": "public/card.png",
+    "scale": 4,
+    "width": 1608,
+    "height": 3496,
+    "fileKey": "xdHhVrICh4tuIjB1bTbsxh"
+  },
+  {
+    "nodeId": "99:448",
+    "file": "public/frozen.png",
+    "scale": 4,
+    "width": 1608,
+    "height": 3496,
+    "fileKey": "xdHhVrICh4tuIjB1bTbsxh"
+  },
+  {
+    "nodeId": "164:682",
+    "file": "public/card-details.png",
+    "scale": 4,
+    "width": 1608,
+    "height": 3496,
+    "fileKey": "xdHhVrICh4tuIjB1bTbsxh"
+  },
+  {
+    "nodeId": "146:515",
+    "file": "public/activity.png",
+    "scale": 4,
+    "width": 1608,
+    "height": 3496,
+    "fileKey": "xdHhVrICh4tuIjB1bTbsxh"
+  },
+  {
+    "nodeId": "164:607",
+    "file": "public/transaction.png",
+    "scale": 4,
+    "width": 1608,
+    "height": 3496,
+    "fileKey": "xdHhVrICh4tuIjB1bTbsxh"
+  },
+  {
+    "nodeId": "131:481",
+    "file": "public/profile.png",
+    "scale": 4,
+    "width": 1608,
+    "height": 3496,
+    "fileKey": "xdHhVrICh4tuIjB1bTbsxh"
+  },
+  {
+    "nodeId": "135:492",
+    "file": "public/faceid.png",
+    "scale": 4,
+    "width": 1608,
+    "height": 3496,
+    "fileKey": "xdHhVrICh4tuIjB1bTbsxh"
+  }
+]

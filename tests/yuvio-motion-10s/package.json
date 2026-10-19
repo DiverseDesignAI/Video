@@ -10,7 +10,7 @@
   },
   "scripts": {
     "preview": "remotion studio src/index.tsx",
-    "render": "remotion render src/index.tsx YuvioMotionTest out/yuvio-transfer-v3.mp4 --crf=15"
+    "render": "remotion render src/index.tsx YuvioMotionTest out/yuvio-walkthrough-v4.mp4 --crf=15"
   },
   "allowScripts": {
     "esbuild@0.28.1": true

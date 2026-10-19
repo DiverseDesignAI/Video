@@ -1,5 +1,6 @@
 import React from 'react';
-import {AbsoluteFill, Composition, registerRoot, useCurrentFrame, useVideoConfig, interpolate, Easing, Img, staticFile, delayRender, continueRender, cancelRender} from 'remotion';
+import {YuvioContinuation} from './Continuation';
+import {AbsoluteFill, Sequence, Composition, registerRoot, useCurrentFrame, useVideoConfig, interpolate, Easing, Img, staticFile, delayRender, continueRender, cancelRender} from 'remotion';
 import {Audio} from '@remotion/media';
 
 if (typeof document !== 'undefined') {
@@ -18,6 +19,7 @@ const Swipe=({t}:{t:number})=>{const p=tween(t,9.1,10.25);return <div style={{po
 const Cursor=({t}:{t:number})=>{const keys=[[0,350,620],[1.25,80,506],[1.8,80,506],[2.6,285,355],[2.85,285,355],[3.4,125,355],[3.72,285,355],[3.8,285,355],[4.35,125,355],[4.65,285,355],[4.75,285,355],[5.3,125,355],[5.6,285,355],[5.7,285,355],[6.25,125,355],[6.6,201,357],[6.9,201,357],[8.65,50,807],[9.1,50,807],[10.25,350,807],[10.6,350,807],[11.4,340,650],[12.8,201,753],[13.2,201,753],[13.5,201,753],[14.2,300,680],[15,300,680]];let x=keys[0][1],y=keys[0][2];for(let i=1;i<keys.length;i++){if(t>=keys[i-1][0]){x=tween(t,keys[i-1][0],keys[i][0],keys[i-1][1],keys[i][1]);y=tween(t,keys[i-1][0],keys[i][0],keys[i-1][2],keys[i][2]);}}const down=(t>=1.75&&t<1.95)||(t>=6.7&&t<6.87)||(t>=13.2&&t<13.4)||swipes.some(([a,b])=>t>=a&&t<=b)||(t>=9.1&&t<=10.25);return <div style={{position:'absolute',left:x,top:y,opacity:tween(t,.5,1)*(1-tween(t,14.1,14.65)),transform:`scale(${down?.88:1})`,transformOrigin:'0 0',filter:'drop-shadow(0 2px 4px #0009)'}}><svg width="28" height="34" viewBox="0 0 28 34"><path d="M2 2 3 27 10 21 15 32 20 30 15 19 25 18Z" fill="#faf8ff" stroke="#777095" strokeWidth="1.2" strokeLinejoin="round"/></svg>{down&&<div style={{position:'absolute',left:-10,top:-10,width:20,height:20,borderRadius:20,border:'1px solid #e7dfff',background:'#b7a5ff33'}}/>}</div>};
 export const YuvioTest=()=>{
  const frame=useCurrentFrame();const {fps}=useVideoConfig();const t=frame/fps;
+ if(t>=15)return <Sequence from={15*fps}><YuvioContinuation/></Sequence>;
  const slideA=tween(t,1.98,2.6);const slideB=tween(t,6.9,7.55);const success=tween(t,10.7,11.3),home=tween(t,13.4,14.1);
  const camera=tween(t,0,1.5,1.02,1)+tween(t,7.55,8.75,0,.065)-tween(t,10.7,11.8,0,.045);
  const lift=tween(t,0,1,25,0)-tween(t,7.55,8.75,0,15);
@@ -45,4 +47,4 @@ export const YuvioTest=()=>{
   <Audio src={staticFile('sound.wav')} volume={.7}/>
  </AbsoluteFill>
 };
-registerRoot(()=> <Composition id="YuvioMotionTest" component={YuvioTest} width={2560} height={1440} fps={60} durationInFrames={900}/>);
+registerRoot(()=> <Composition id="YuvioMotionTest" component={YuvioTest} width={2560} height={1440} fps={60} durationInFrames={4440}/>);

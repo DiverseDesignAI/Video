@@ -4,9 +4,11 @@
 
 ## Current revision
 
-Revision 3 extends the film to **15 seconds / 900 frames**: after Nikita, swipe to Angelina, send to her, show Transfer Sent, click Go home and return to Home. Headlines are heavier. Receive is planned next. See [REVISION-3.md](REVISION-3.md).
+Revision 4 is a **74-second full walkthrough / 4,440 frames**, preserving the approved 15-second opening and adding 59 seconds of Receive, Exchange, Receipt, Card / Freeze, Card Details, Activity / Netflix, Profile / Face ID and a three-device brand ending.
 
-Current export: `deliverables/yuvio-transfer-v3.mp4`, H.264 CRF 15, 1440p60. Revision 1 and 2 MP4 files remain for comparison. The composition ID stays `YuvioMotionTest` for the existing Studio tab.
+See [REVISION-4.md](REVISION-4.md), [CONTINUATION-BRIEF.md](CONTINUATION-BRIEF.md) and [timeline-v4.json](timeline-v4.json).
+
+Current export: `deliverables/yuvio-walkthrough-v4.mp4`, H.264 CRF 15, 1440p60. Previous videos remain for comparison. The composition ID stays `YuvioMotionTest` for the existing Studio tab.
 
 ## Original scope
 
