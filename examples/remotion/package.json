@@ -1,0 +1,17 @@
+{
+  "name": "yuvio-remotion-example",
+  "private": true,
+  "dependencies": {
+    "remotion": "4.0.536",
+    "@remotion/cli": "4.0.536",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "scripts": {
+    "preview": "remotion studio src/index.tsx",
+    "render": "remotion render src/index.tsx YuvioDemo out/demo.mp4"
+  },
+  "allowScripts": {
+    "esbuild@0.28.1": true
+  }
+}

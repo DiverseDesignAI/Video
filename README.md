@@ -12,7 +12,7 @@
 
 ## Remotion
 
-В `examples/remotion`: `npm ci`, затем `npx remotion studio src/index.tsx` для предпросмотра.
+В `examples/remotion`: `npm install`, затем `npx remotion studio src/index.tsx` для предпросмотра.
 Для экспорта: `npx remotion render src/index.tsx YuvioDemo out/demo.mp4`.
 В коде движение задаётся через `useCurrentFrame`, `interpolate`, `spring`, а не таймеры реального времени.
 Скил для запроса: `$remotion-create` или `$remotion-best-practices`.
@@ -52,3 +52,12 @@
 - https://github.com/heygen-com/hyperframes
 
 Remotion использует собственную лицензию; перед коммерческой работой применимость условий проверяется отдельно.
+
+## Проверка установки (19 октября 2026)
+
+- Скилы: 12 Remotion, 10 основных HyperFrames и пользовательский editly-video установлены в Codex. Доступны со следующего сообщения.
+- HyperFrames 0.8.175: CLI запускается, пример проходит lint без замечаний. Экспорт MP4 не проверен.
+- Editly 0.14.2: пакет получен, но запуск на Windows / Node 24 блокируется нативными модулями canvas/gl. Для сборки не хватает C++ Build Tools; готового gl-бинарника для этого окружения нет. Рабочий рендер не подтверждён.
+- FFmpeg/ffprobe не найдены в PATH.
+
+- Remotion 4.0.536: установлен; CLI запускается, стартовый пример успешно собирается в веб-композицию. Экспорт MP4 пока не проверен.
