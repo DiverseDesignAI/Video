@@ -1,0 +1,80 @@
+{
+  "baseMasterSourceCommit": "f2473ec",
+  "totalFrames": 4080,
+  "fps": 60,
+  "refinedFrames": 415,
+  "windows": [
+    {
+      "from": 316,
+      "to": 342
+    },
+    {
+      "from": 506,
+      "to": 528
+    },
+    {
+      "from": 763,
+      "to": 788
+    },
+    {
+      "from": 1057,
+      "to": 1080
+    },
+    {
+      "from": 1239,
+      "to": 1261
+    },
+    {
+      "from": 1582,
+      "to": 1605
+    },
+    {
+      "from": 1925,
+      "to": 1946
+    },
+    {
+      "from": 2091,
+      "to": 2113
+    },
+    {
+      "from": 2338,
+      "to": 2360
+    },
+    {
+      "from": 2626,
+      "to": 2649
+    },
+    {
+      "from": 2789,
+      "to": 2812
+    },
+    {
+      "from": 2884,
+      "to": 2904
+    },
+    {
+      "from": 3087,
+      "to": 3108
+    },
+    {
+      "from": 3203,
+      "to": 3228
+    },
+    {
+      "from": 3427,
+      "to": 3454
+    },
+    {
+      "from": 3614,
+      "to": 3643
+    },
+    {
+      "from": 3833,
+      "to": 3857
+    }
+  ],
+  "audioSource": "public/v7/soundtrack.wav",
+  "audioContinuity": "Uncut original PCM; independent of picture windows",
+  "timing": "Round frame boundaries to Matroska milliseconds, select concat segment metadata, then rebuild exact 60 FPS timestamps",
+  "encoder": "FFmpeg 7.1 via imageio-ffmpeg 0.6.0; NVIDIA NVENC p7"
+}

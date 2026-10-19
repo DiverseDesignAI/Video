@@ -1,22 +1,24 @@
 # YUVIO / Product walkthrough
 
-2560 × 1440 · 60 fps · 4080 frames · 68 seconds · Remotion 4.0.536.
+2560 Г— 1440 В· 60 fps В· 4080 frames В· 68 seconds В· Remotion 4.0.536.
 
 ## Current revision
 
-**V6: 68 seconds, 4080 frames, 1440p60.** Restored live backdrop blur under the card action panel, full-resolution dithered gradient fields, a cleaner device shadow, tighter pacing and varied camera motion. Current Transaction Details remains **212:840**.
+**V7: 68 seconds, 4080 frames, 1440p60.** Larger Onest typography, a readable 5.3-second introduction, original UI Kit press states, two deliberate recipient switches, synchronized receipt entry and the complete Freeze / Unfreeze cycle. The V6 phone shell, approved palette, glass panel and current Transaction Details **212:840** remain intact.
 
-See [REVISION-6.md](REVISION-6.md), [V6-REVISION-NOTES.md](V6-REVISION-NOTES.md), [v6-timeline.json](v6-timeline.json), and [v6-motion-audit.json](v6-motion-audit.json).
+See [REVISION-7.md](REVISION-7.md), [V7-REVISION-NOTES.md](V7-REVISION-NOTES.md), [v7-timeline.json](v7-timeline.json), [v7-source-qa.json](v7-source-qa.json), and [v7-motion-audit.json](v7-motion-audit.json).
 
-Current delivery: `deliverables/yuvio-walkthrough-v6.mp4`. The ProRes intermediate is local; the additional 10-bit HEVC delivery is encoded from it. Existing V5 component filenames are retained inside the project; src/motionV6.ts owns the new clock/camera and public/v6 owns the new background/audio. Earlier reports and videos are archival.
+Delivery export is in progress. H.264 targets 30 Mbit/s; an additional high-quality HEVC Main 10 copy is encoded from the same working master. Final measurements are recorded in v7-export-validation.json after export. Large V7 videos use Git LFS; browser download links provide the actual video.
 
-## Original scope
+The live composition is still named YuvioMotionTest to preserve the existing Studio link. Its entry point is src/YuvioV7.tsx; V5/V6 sources are retained as prior revisions.
 
-Home → tap Send → select Nikita → show amount and fees → slide to confirm. This is an animation test, not a functioning banking app. It ends on the confirmed control, before the unresolved Transfer Sent / Completed screen.
+## Original 10-second test (historical)
 
-The three full-screen images are genuine Figma exports at 4× (1608 × 3496). Screen transitions, camera motion, tap feedback and the confirmation thumb are animated separately. Most internal UI layers remain raster images; this does not yet implement an entirely live UI. The small confirmation track is reconstructed from the original Figma geometry and paints; its thumb is an original vector export. No Figma nodes were changed.
+Home в†’ tap Send в†’ select Nikita в†’ show amount and fees в†’ slide to confirm. This is an animation test, not a functioning banking app. It ends on the confirmed control, before the unresolved Transfer Sent / Completed screen.
 
-## Source assets
+The three full-screen images are genuine Figma exports at 4Г— (1608 Г— 3496). Screen transitions, camera motion, tap feedback and the confirmation thumb are animated separately. Most internal UI layers remain raster images; this does not yet implement an entirely live UI. The small confirmation track is reconstructed from the original Figma geometry and paints; its thumb is an original vector export. No Figma nodes were changed.
+
+## Initial source assets (historical)
 
 File: https://www.figma.com/design/xdHhVrICh4tuIjB1bTbsxh/
 
@@ -32,11 +34,11 @@ No temporary Figma URLs are used at runtime.
 
 ## Run
 
-Node.js 22+ recommended. `npm ci`, then `npm run preview` or `npm run render`.
+Node.js 22+ and Git LFS. Run npm ci, then npm run preview. Source validation: npm run audit:v7.
 
-On this Windows machine rendering used the existing Google Chrome executable, H.264, CRF 17, yuv420p and concurrency 3. Pass `--browser-executable="C:/Program Files/Google/Chrome/Application/chrome.exe"` when using that installation. On a fresh machine Remotion may need to install its rendering browser.
+For the quality pipeline, run npm run render:master, then tools/encode_v7.ps1 with -Master pointing to out/yuvio-v7-master.mkv and -OutputDirectory pointing to your delivery folder. The script uses NVIDIA NVENC; an equivalent software encoder can be substituted on other hardware. npm run render is a direct H.264 alternative; its rate control differs from the verified two-stage export.
 
-The test MP4 is stored in the repository's deliverables/ directory. Dependencies and caches are excluded from Git.
+On this Windows machine the existing Chrome executable is C:/Program Files/Google/Chrome/Application/chrome.exe. Pass the browser-executable option when rendering with that installation. Dependencies, render caches and working masters are excluded from Git.
 
 ## Known limitations
 

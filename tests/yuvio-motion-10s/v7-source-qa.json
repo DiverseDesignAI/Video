@@ -23,5 +23,8 @@
   "realtimePreviewObservedFPS": [
     58.9,
     62.3
-  ]
+  ],
+  "captionBoundaryFramesCheckedInBrowser": 415,
+  "captionOverlapFrames": 0,
+  "captionHandoff": "Sequential fade; never two visible heading compositions"
 }
