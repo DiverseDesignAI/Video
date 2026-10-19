@@ -4,7 +4,9 @@
 
 ## Current revision
 
-Revision 2 adds recipient swipes, a visible cursor, animated pagination, larger headlines and gradient dithering. See [REVISION-2.md](REVISION-2.md). Export: `deliverables/yuvio-test-10s-v2.mp4`, H.264 CRF 15. Revision 1 remains available for comparison.
+Revision 3 extends the film to **15 seconds / 900 frames**: after Nikita, swipe to Angelina, send to her, show Transfer Sent, click Go home and return to Home. Headlines are heavier. Receive is planned next. See [REVISION-3.md](REVISION-3.md).
+
+Current export: `deliverables/yuvio-transfer-v3.mp4`, H.264 CRF 15, 1440p60. Revision 1 and 2 MP4 files remain for comparison. The composition ID stays `YuvioMotionTest` for the existing Studio tab.
 
 ## Original scope
 
