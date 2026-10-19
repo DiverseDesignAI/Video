@@ -45,3 +45,11 @@ Source WAV: stereo 48 kHz, −16.00 LUFS integrated, −4.03 dBTP measured with 
 - Short encoded Activity → Transaction → Done → Activity draft inspected at key points.
 - All 5,280 camera/state samples audited: safe device bounds, no frost/control contradiction, no mouse pointer in the active import graph, correct Done destination. See v5-motion-audit.json and tools/audit_v5.cjs.
 - Final render and encoded audio validation will be appended after export.
+
+## Final encoded export validation
+
+Final MP4: 88.000 seconds, 46,950,442 bytes, H.264, BT.709, 2560×1440, 60/1 FPS, 5,280 frames; AAC stereo 48 kHz. Full video/audio decoding completed without errors.
+
+Encoded AAC measured −16.015 LUFS integrated and −4.040 dBTP with 4× oversampling. See assets/audio/v5/encoded-mastering.json.
+
+Inspected 18 decoded frames across intro, continuous handoff, Home, contact drag, Send, processing transfer, QR, exchange swipe/success, receipt, Freeze/Unfreeze, masked details, Activity push, current transaction/reference, Done return, Face ID and final hold. Frame 212:840 is used throughout the transaction sequence; the old Netflix illustration is absent from the V5 render graph.
