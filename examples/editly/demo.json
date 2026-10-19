@@ -1,0 +1,24 @@
+{
+  "outPath": "out/demo.mp4",
+  "width": 640,
+  "height": 360,
+  "fps": 25,
+  "defaults": {
+    "transition": null
+  },
+  "clips": [
+    {
+      "duration": 2,
+      "layers": [
+        {
+          "type": "fill-color",
+          "color": "#17132e"
+        },
+        {
+          "type": "title",
+          "text": "YUVIO"
+        }
+      ]
+    }
+  ]
+}

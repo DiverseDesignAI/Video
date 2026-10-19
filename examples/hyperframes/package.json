@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "hyperframes": "0.8.175"
+  },
+  "name": "yuvio-hyperframes-example",
+  "private": true,
+  "scripts": {
+    "preview": "hyperframes preview",
+    "check": "hyperframes check"
+  }
+}

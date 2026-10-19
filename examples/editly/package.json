@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "editly": "0.14.2"
+  },
+  "allowScripts": {
+    "canvas@2.11.2": true,
+    "gl@5.0.3": true
+  },
+  "name": "yuvio-editly-example",
+  "private": true,
+  "scripts": {
+    "render": "editly demo.json",
+    "draft": "editly demo.json --fast"
+  }
+}
