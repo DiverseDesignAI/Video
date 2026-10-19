@@ -1,0 +1,40 @@
+{
+  "yuvio-walkthrough-v6.mp4": {
+    "bytes": 58759890,
+    "duration": "68.000000",
+    "video": {
+      "codec_name": "h264",
+      "profile": "100",
+      "width": 2560,
+      "height": 1440,
+      "pix_fmt": "yuv420p",
+      "r_frame_rate": "60/1",
+      "nb_frames": "4080",
+      "color_space": "bt709",
+      "color_transfer": "bt709",
+      "color_primaries": "bt709"
+    },
+    "fullDecode": "passed"
+  },
+  "yuvio-walkthrough-v6-10bit.mp4": {
+    "bytes": 33448384,
+    "duration": "68.000000",
+    "video": {
+      "codec_name": "hevc",
+      "profile": "Main 10",
+      "width": 2560,
+      "height": 1440,
+      "pix_fmt": "yuv420p10le",
+      "r_frame_rate": "60/1",
+      "nb_frames": "4080",
+      "color_space": "bt709",
+      "color_transfer": "bt709",
+      "color_primaries": "bt709"
+    },
+    "fullDecode": "passed"
+  },
+  "audio": {
+    "integratedLUFS": -16.008885098217316,
+    "truePeakDBTP": -4.361398321178159
+  }
+}

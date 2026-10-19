@@ -10,7 +10,7 @@
   },
   "scripts": {
     "preview": "remotion studio src/index.tsx",
-    "render": "remotion render src/index.tsx YuvioMotionTest out/yuvio-walkthrough-v6.mp4 --crf=12 --image-format=png --color-space=bt709 --audio-bitrate=320k",
+    "render": "remotion render src/index.tsx YuvioMotionTest out/yuvio-walkthrough-v6.mp4 --crf=10 --image-format=png --color-space=bt709 --audio-bitrate=320k",
     "audit:v5": "node tools/audit_v5.cjs",
     "audit:v6": "node tools/audit_v6.cjs"
   },
@@ -18,3 +18,4 @@
     "esbuild@0.28.1": true
   }
 }
+

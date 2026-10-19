@@ -25,3 +25,12 @@ See src/motionV6.ts, v6-timeline.json, tools/audit_v6.cjs and v6-motion-audit.js
 Render from PNG frames into a ProRes HQ 10-bit 4:2:2 intermediate, then encode the high-quality H.264 MP4 and an HEVC Main 10 archival copy from that intermediate. Browser/Figma inputs remain SDR 8-bit; a 10-bit intermediate reduces later quantization, it does not invent HDR or extra source detail.
 
 ProRes is a local working intermediate due to its large size. Final delivery files and all editable sources are stored in GitHub. Final encoded measurements and checks will be appended after export.
+
+## Final export validation
+
+- H.264: 58,759,890 bytes; HEVC Main 10: 33,448,384 bytes.
+- Both files: 68.000 seconds, 2560×1440, 60/1 FPS, 4080 frames, BT.709 SDR; full video/audio decode passed.
+- Encoded audio: -16.009 LUFS integrated, -4.361 dBTP (4× oversampling).
+- Inspected 18 exported frames covering the entire sequence, including Active/Frozen/Unfreeze Cards and current Transaction Details. Source audit covers all 4080 motion samples.
+- The 6.38 GB ProRes HQ intermediate is retained locally. The additional fast-start relocation of this working MOV was skipped; it is unnecessary for an editing intermediate. Both delivered MP4s have fast-start enabled.
+- Validation details: v6-export-validation.json. Reproduce delivery encoding with tools/encode_v6.ps1; validate with tools/validate_v6.py (local outputs directory layout).

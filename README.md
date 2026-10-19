@@ -1,5 +1,9 @@
 # Video / YUVIO
 
+Текущая версия: **V6 — 68 секунд, 2560×1440, 60 FPS**.
+
+[MP4](deliverables/yuvio-walkthrough-v6.mp4) · [10-bit HEVC](deliverables/yuvio-walkthrough-v6-10bit.mp4) · [Описание изменений](tests/yuvio-motion-10s/REVISION-6.md) · [Проверка экспорта](tests/yuvio-motion-10s/v6-export-validation.json)
+
 Рабочий репозиторий для анимаций и монтажа. Исходники и инструкции хранятся здесь. `node_modules`, кэши и временные видео не коммитятся.
 
 ## Что выбрать
@@ -61,3 +65,4 @@ Remotion использует собственную лицензию; пере�
 - FFmpeg/ffprobe не найдены в PATH.
 
 - Remotion 4.0.536: установлен; CLI запускается, стартовый пример успешно собирается в веб-композицию. Экспорт MP4 пока не проверен.
+
