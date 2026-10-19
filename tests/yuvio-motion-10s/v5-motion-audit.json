@@ -1,0 +1,14 @@
+{
+  "frames": 5280,
+  "phoneBounds": {
+    "minLeft": 1061,
+    "minTop": 128,
+    "maxRight": 2140.22,
+    "maxBottom": 1370
+  },
+  "maxFrameScaleDelta": 0.005743002884352144,
+  "transactionFrame": "212:840",
+  "transactionReturn": "Done → Activity",
+  "cursor": "absent",
+  "frostStateFrames": "all 5280 checked"
+}

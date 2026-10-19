@@ -1,14 +1,14 @@
 # YUVIO / Product walkthrough
 
-2560 × 1440 · 60 fps · 4,440 frames · 74 seconds · Remotion 4.0.536.
+2560 × 1440 · 60 fps · 5,280 frames · 88 seconds · Remotion 4.0.536.
 
 ## Current revision
 
-Revision 4 is a **74-second full walkthrough / 4,440 frames**, preserving the approved 15-second opening and adding 59 seconds of Receive, Exchange, Receipt, Card / Freeze, Card Details, Activity / Netflix, Profile / Face ID and a three-device brand ending.
+**V5: 88 seconds, 5,280 frames, 1440p60.** New original-logo intro, iPhone 16 Pro mockup, mobile touch feedback without a cursor, synchronized Freeze / Unfreeze, approved copy, new stereo music and UI sounds, and the current card-focused Transaction Details from **212:840**.
 
-See [REVISION-4.md](REVISION-4.md), [CONTINUATION-BRIEF.md](CONTINUATION-BRIEF.md) and [timeline-v4.json](timeline-v4.json).
+See [REVISION-5.md](REVISION-5.md), [V5-BRIEF.md](V5-BRIEF.md), [V5-TRANSACTION-OVERRIDE.md](V5-TRANSACTION-OVERRIDE.md), and [v5-motion-audit.json](v5-motion-audit.json).
 
-Current export: `deliverables/yuvio-walkthrough-v4.mp4`, H.264 CRF 15, 1440p60. Previous videos remain for comparison. The composition ID stays `YuvioMotionTest` for the existing Studio tab.
+Current export: `deliverables/yuvio-walkthrough-v5.mp4`. Main source: `src/YuvioV5.tsx`; interaction timing: `src/motionV5.ts`. Composition ID remains `YuvioMotionTest` for the existing Studio tab. Earlier videos and reports are historical; they do not describe the current V5 transaction screen.
 
 ## Original scope
 

@@ -1,0 +1,159 @@
+{
+  "fileKey": "xdHhVrICh4tuIjB1bTbsxh",
+  "authoritativeTransactionFrame": "212:840",
+  "screens": [
+    {
+      "nodeId": "53:1562",
+      "file": "public/v5/home.png",
+      "scale": 4,
+      "width": 1608,
+      "height": 3496
+    },
+    {
+      "nodeId": "437:4033",
+      "file": "public/v5/angelina.png",
+      "scale": 4,
+      "width": 1608,
+      "height": 3496
+    },
+    {
+      "nodeId": "435:3766",
+      "file": "public/v5/ilya.png",
+      "scale": 4,
+      "width": 1608,
+      "height": 3496
+    },
+    {
+      "nodeId": "435:3855",
+      "file": "public/v5/dmitriy.png",
+      "scale": 4,
+      "width": 1608,
+      "height": 3496
+    },
+    {
+      "nodeId": "437:3944",
+      "file": "public/v5/nikita.png",
+      "scale": 4,
+      "width": 1608,
+      "height": 3496
+    },
+    {
+      "nodeId": "163:574",
+      "file": "public/v5/send.png",
+      "scale": 4,
+      "width": 1608,
+      "height": 3496
+    },
+    {
+      "nodeId": "274:686",
+      "file": "public/v5/sent.png",
+      "scale": 4,
+      "width": 1608,
+      "height": 3496
+    },
+    {
+      "nodeId": "126:470",
+      "file": "public/v5/receive.png",
+      "scale": 4,
+      "width": 1608,
+      "height": 3496
+    },
+    {
+      "nodeId": "163:688",
+      "file": "public/v5/exchange.png",
+      "scale": 4,
+      "width": 1608,
+      "height": 3496
+    },
+    {
+      "nodeId": "175:641",
+      "file": "public/v5/exchange-success.png",
+      "scale": 4,
+      "width": 1608,
+      "height": 3496
+    },
+    {
+      "nodeId": "245:675",
+      "file": "public/v5/receipt.png",
+      "scale": 4,
+      "width": 1608,
+      "height": 3496
+    },
+    {
+      "nodeId": "90:437",
+      "file": "public/v5/card.png",
+      "scale": 4,
+      "width": 1608,
+      "height": 3496
+    },
+    {
+      "nodeId": "99:448",
+      "file": "public/v5/frozen.png",
+      "scale": 4,
+      "width": 1608,
+      "height": 3496
+    },
+    {
+      "nodeId": "164:682",
+      "file": "public/v5/card-details.png",
+      "scale": 4,
+      "width": 1608,
+      "height": 3496
+    },
+    {
+      "nodeId": "146:515",
+      "file": "public/v5/activity.png",
+      "scale": 4,
+      "width": 1608,
+      "height": 3496
+    },
+    {
+      "nodeId": "212:840",
+      "file": "public/v5/transaction-current.png",
+      "scale": 4,
+      "width": 1608,
+      "height": 3496
+    },
+    {
+      "nodeId": "131:481",
+      "file": "public/v5/profile.png",
+      "scale": 4,
+      "width": 1608,
+      "height": 3496
+    },
+    {
+      "nodeId": "135:492",
+      "file": "public/v5/faceid.png",
+      "scale": 4,
+      "width": 1608,
+      "height": 3496
+    }
+  ],
+  "logo": {
+    "nodeId": "345:726",
+    "file": "public/v5/logo-primary.svg"
+  },
+  "portraits": {
+    "nodes": [
+      "437:4109",
+      "435:3842",
+      "435:3931",
+      "437:4020"
+    ],
+    "format": "original transparent PNG image fills"
+  },
+  "frost": {
+    "nodeId": "267:856",
+    "file": "public/v5/frost-original.png",
+    "note": "Original transparent image fill; same cover crop as the Figma rectangle"
+  },
+  "transaction": {
+    "frame": "212:840",
+    "card": "215:675",
+    "paymentProof": "215:663",
+    "details": "212:907",
+    "reference": "212:906",
+    "done": "212:878",
+    "returnTo": "Activity"
+  }
+}
