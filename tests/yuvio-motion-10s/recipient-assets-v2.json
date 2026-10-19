@@ -1,0 +1,22 @@
+{
+  "angelina": {
+    "figmaNodeId": "437:4033",
+    "scale": 4,
+    "file": "angelina.png"
+  },
+  "ilya": {
+    "figmaNodeId": "435:3766",
+    "scale": 4,
+    "file": "ilya.png"
+  },
+  "dmitriy": {
+    "figmaNodeId": "435:3855",
+    "scale": 4,
+    "file": "dmitriy.png"
+  },
+  "nikita": {
+    "figmaNodeId": "437:3944",
+    "scale": 4,
+    "file": "nikita.png"
+  }
+}

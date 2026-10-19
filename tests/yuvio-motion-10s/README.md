@@ -2,7 +2,11 @@
 
 2560 × 1440 · 60 fps · 600 frames · Remotion 4.0.536.
 
-## Scope
+## Current revision
+
+Revision 2 adds recipient swipes, a visible cursor, animated pagination, larger headlines and gradient dithering. See [REVISION-2.md](REVISION-2.md). Export: `deliverables/yuvio-test-10s-v2.mp4`, H.264 CRF 15. Revision 1 remains available for comparison.
+
+## Original scope
 
 Home → tap Send → select Nikita → show amount and fees → slide to confirm. This is an animation test, not a functioning banking app. It ends on the confirmed control, before the unresolved Transfer Sent / Completed screen.
 
