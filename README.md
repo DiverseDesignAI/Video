@@ -1,8 +1,10 @@
 # Video / YUVIO
 
-Текущая версия: **V6 — 68 секунд, 2560×1440, 60 FPS**.
+Текущая версия: **V7 — 68 секунд, 2560×1440, 60 FPS, H.264 29,9 Мбит/с**.
 
-[MP4](deliverables/yuvio-walkthrough-v6.mp4) · [10-bit HEVC](deliverables/yuvio-walkthrough-v6-10bit.mp4) · [Описание изменений](tests/yuvio-motion-10s/REVISION-6.md) · [Проверка экспорта](tests/yuvio-motion-10s/v6-export-validation.json)
+[Скачать MP4](https://media.githubusercontent.com/media/DiverseDesignAI/Video/main/deliverables/yuvio-walkthrough-v7.mp4) · [10-bit HEVC](https://media.githubusercontent.com/media/DiverseDesignAI/Video/main/deliverables/yuvio-walkthrough-v7-10bit.mp4) · [Описание изменений](tests/yuvio-motion-10s/REVISION-7.md) · [Проверка экспорта](tests/yuvio-motion-10s/v7-export-validation.json)
+
+Видео V7 хранятся через Git LFS. Для обычного скачивания используйте ссылки выше.
 
 Рабочий репозиторий для анимаций и монтажа. Исходники и инструкции хранятся здесь. `node_modules`, кэши и временные видео не коммитятся.
 

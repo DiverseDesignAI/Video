@@ -1,10 +1,10 @@
-# V7 Р В Р вЂ Р В РІР‚С™Р Р†Р вЂљРЎСљ Typography, Interaction & Motion Refinement
+# V7 — Typography, Interaction & Motion Refinement
 
 Incremental revision of V6. Original V5/V6 implementation and assets remain available. The current Studio composition uses YuvioV7.tsx / ScreensV7.tsx / motionV7.ts.
 
 ## Timing and typography
 
-68 seconds / 4080 frames / 2560Р В РІР‚СљР Р†Р вЂљРІР‚Сњ1440 / 60 FPS. Intro builds over 0Р В Р вЂ Р В РІР‚С™Р Р†Р вЂљРЎС™2.2 seconds, holds fully readable over 2.2Р В Р вЂ Р В РІР‚С™Р Р†Р вЂљРЎС™4.2, and continuously resolves into Home over 4.2Р В Р вЂ Р В РІР‚С™Р Р†Р вЂљРЎС™5.3. Later Card Details and other idle holds are shortened to retain the total duration.
+68 seconds / 4080 frames / 2560×1440 / 60 FPS. Intro builds over 0–2.2 seconds, holds fully readable over 2.2–4.2, and continuously resolves into Home over 4.2–5.3. Later Card Details and other idle holds are shortened to retain the total duration.
 
 Onest headings are 112 px / 700; descriptions 42 px / 400 with a fixed 38 px separation. The column is 1160 px wide at x=180. All 16 caption entries use manual semantic line breaks and were measured in the actual browser: no overflow. One lavender line is the accent. Captions hold through the touch, then use a short sequential fade-out / fade-in. Old and new headings never overlap; all 415 boundary frames were verified in the live browser.
 
@@ -20,11 +20,11 @@ Read the source UI Kit on 20 October 2026. See v7-kit-provenance.json for origin
 
 ## Product continuity
 
-Recipient sequence is Angelina Р В Р вЂ Р Р†Р вЂљР’В Р Р†Р вЂљРІвЂћСћ Nikita Р В Р вЂ Р Р†Р вЂљР’В Р Р†Р вЂљРІвЂћСћ Angelina: two deliberate swipes, dwell, then an explicit tap. The original five pagination dots are retained, advancing through the three shown contacts (positions 3Р Р†Р вЂљРІР‚Сљ5). Final selection, Send Money and Transfer Sent consistently use Angelina Firsova and the prepared original transaction values. Activity remains the existing historical list, not a fabricated newly added transfer.
+Recipient sequence is Angelina → Nikita → Angelina: two deliberate swipes, dwell, then an explicit tap. The original five pagination dots are retained, advancing through the three shown contacts (positions 3–5). Final selection, Send Money and Transfer Sent consistently use Angelina Firsova and the prepared original transaction values. Activity remains the existing historical list, not a fabricated newly added transfer.
 
 Receipt artwork is present from the first incoming transition frame; the paper and containing screen move together, with a small clipped lift rather than an empty loading state or a height-zero reveal.
 
-Active Р В Р вЂ Р Р†Р вЂљР’В Р Р†Р вЂљРІвЂћСћ Pressed Freeze Р В Р вЂ Р Р†Р вЂљР’В Р Р†Р вЂљРІвЂћСћ Frozen Р В Р вЂ Р Р†Р вЂљР’В Р Р†Р вЂљРІвЂћСћ Pressed Unfreeze Р В Р вЂ Р Р†Р вЂљР’В Р Р†Р вЂљРІвЂћСћ Active retains original status, labels, information message and frost asset. Original controls are split into panel/status and three action tiles. The CSS backdrop-filter remains behind the panel and never blurs labels or icons. Frozen state remains until the departing frost texture has fully cleared.
+Active → Pressed Freeze → Frozen → Pressed Unfreeze → Active retains original status, labels, information message and frost asset. Original controls are split into panel/status and three action tiles. The CSS backdrop-filter remains behind the panel and never blurs labels or icons. Frozen state remains until the departing frost texture has fully cleared.
 
 The original iPhone shell, Dynamic Island, screen clipping and safe margins are preserved. Status-bar and home-indicator crops are composited after routed page transitions so they stay fixed while the interface moves. Send and Card are about 12% larger than V6; other scenes remain quieter. Transaction Details still uses only 212:840 and the original YUVIO virtual card.
 

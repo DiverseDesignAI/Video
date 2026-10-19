@@ -1,6 +1,6 @@
 # YUVIO / Product walkthrough
 
-2560 Р“вЂ” 1440 Р’В· 60 fps Р’В· 4080 frames Р’В· 68 seconds Р’В· Remotion 4.0.536.
+2560 × 1440 · 60 fps · 4080 frames · 68 seconds · Remotion 4.0.536.
 
 ## Current revision
 
@@ -14,9 +14,9 @@ The live composition is still named YuvioMotionTest to preserve the existing Stu
 
 ## Original 10-second test (historical)
 
-Home РІвЂ вЂ™ tap Send РІвЂ вЂ™ select Nikita РІвЂ вЂ™ show amount and fees РІвЂ вЂ™ slide to confirm. This is an animation test, not a functioning banking app. It ends on the confirmed control, before the unresolved Transfer Sent / Completed screen.
+Home → tap Send → select Nikita → show amount and fees → slide to confirm. This is an animation test, not a functioning banking app. It ends on the confirmed control, before the unresolved Transfer Sent / Completed screen.
 
-The three full-screen images are genuine Figma exports at 4Р“вЂ” (1608 Р“вЂ” 3496). Screen transitions, camera motion, tap feedback and the confirmation thumb are animated separately. Most internal UI layers remain raster images; this does not yet implement an entirely live UI. The small confirmation track is reconstructed from the original Figma geometry and paints; its thumb is an original vector export. No Figma nodes were changed.
+The three full-screen images are genuine Figma exports at 4× (1608 × 3496). Screen transitions, camera motion, tap feedback and the confirmation thumb are animated separately. Most internal UI layers remain raster images; this does not yet implement an entirely live UI. The small confirmation track is reconstructed from the original Figma geometry and paints; its thumb is an original vector export. No Figma nodes were changed.
 
 ## Initial source assets (historical)
 
