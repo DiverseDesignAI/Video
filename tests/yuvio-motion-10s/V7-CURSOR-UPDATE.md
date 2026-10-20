@@ -1,6 +1,6 @@
 # V7 cursor, Card states and typography revision
 
-The Studio composition has been updated; the previously published V7 MP4s remain the previous export. No new full-length video was rendered for this revision.
+The final full-length V7 export was rendered from source commit c1c71db on 20 October 2026. Both published V7 MP4s now include this cursor, Card and typography revision. Earlier exports remain available in Git history.
 
 - One demonstration cursor, lavender #C1B7FF, rounded asymmetric vector silhouette, approximately 44 px wide at 2560 × 1440. The reference image was not attached to this request; the silhouette follows the supplied written shape description.
 - Cursor position is anchored to its visible tip in composition space, with approach deceleration, 6.5% press compression and short fades. It appears for 19 taps, two contact drags and two complete 300 UI-pixel confirmation swipes. Passive scenes remain clear. Card targets are placed beside their labels to keep the lettering visible.
@@ -10,5 +10,7 @@ The Studio composition has been updated; the previously published V7 MP4s remain
 - Existing 68-second timeline, 1440p60 composition, camera scale, soundtrack and approved transaction screen 212:840 are preserved.
 
 Validation: existing 4080-frame motion audit and dedicated cursor audit pass; nineteen representative frames rendered, including all sixteen caption sections and card interaction states. Additional final samples check confirmation swipes and corrected closing Card. Studio reports no error. Mechanical Impeccable detector reports no findings for changed visual components.
+
+Final encoded validation: both MP4s fully decode, 2560 × 1440, 60 FPS, 4080 frames, exactly 68 seconds. H.264 delivery is 29.912 Mbit/s and 257,113,394 bytes; HEVC Main 10 delivery is 32,585,352 bytes. Both encoders report zero duplicated or dropped frames. Audio measures −16.008 LUFS and −4.725 dBTP. Twenty-five decoded frame samples were inspected across the complete journey. Exact file hashes and source fingerprints are recorded in `v7-export-validation.json`.
 
 Run `node tools/audit_v7.cjs` and `node tools/audit_cursor_v7.cjs` from this project. `tools/prepare_v7_assets.py` includes the current Card export derivatives so regeneration preserves the corrected neutral state.

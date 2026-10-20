@@ -10,6 +10,9 @@ OUT=BASE/'outputs';WORK=BASE/'work';BIN=ROOT/'node_modules/@remotion/compositor-
 def run(args):return subprocess.run([str(BIN/'ffmpeg.exe'),'-hide_banner','-loglevel','error',*map(str,args)],check=True,capture_output=True)
 def probe(p):return json.loads(subprocess.check_output([str(BIN/'ffprobe.exe'),'-v','error','-show_format','-show_streams','-of','json',str(p)]))
 report={'sourceCommit':subprocess.check_output(['git','-C',str(ROOT),'rev-parse','HEAD'],text=True).strip(),'deliveries':{}}
+report['renderSourceHashes']={name:hashlib.sha256((ROOT/'src'/name).read_bytes()).hexdigest() for name in ['index.tsx','YuvioV7.tsx','ScreensV7.tsx','motionV7.ts','CursorV7.tsx']}
+report['cursorAudit']=json.loads((ROOT/'v7-cursor-audit.json').read_text(encoding='utf-8'))
+assert report['cursorAudit']['status']=='passed'
 for name in ['yuvio-walkthrough-v7.mp4','yuvio-walkthrough-v7-10bit.mp4']:
  p=OUT/name;data=probe(p);v=next(s for s in data['streams'] if s['codec_type']=='video')
  assert (v['width'],v['height'],v['r_frame_rate'],v['nb_frames'])==(2560,1440,'60/1','4080')
@@ -30,7 +33,7 @@ report['backgrounds']={}
 for name in ['intro','normal','qr','cold','outro']:
  data=(ROOT/'public/v7'/f'{name}.png').read_bytes();w,h,depth,color=struct.unpack('>IIBB',data[16:26]);assert (w,h,depth,color)==(2560,1440,16,2)
  report['backgrounds'][name]={'width':w,'height':h,'sourceBitDepth':depth,'colorType':'RGB'}
-times=[3.2,6.9,9.6,12.38,15.2,19.2,23.5,29.2,33.45,34.65,36.9,41.4,43.77,45.1,46.47,47.5,49.8,52.4,55.2,58.6,62.2,66.5]
+times=[3.2,6.9,9.6,12.38,15.2,17.2,19.2,23.5,29.2,31.5,33.45,34.65,36.9,41.4,43.57,43.77,45.1,46.47,47.5,49.8,52.4,55.2,58.6,62.2,66.5]
 thumbs=[]
 for i,t in enumerate(times):
  p=WORK/f'v7-encoded-{i}.png';run(['-ss',t,'-i',main,'-frames:v','1','-y',p])
@@ -40,5 +43,5 @@ for i,im in enumerate(thumbs):sheet.paste(im,((i%3)*640,(i//3)*360))
 sheet.save(WORK/'v7-export-contact.jpg',quality=94)
 run(['-ss','66.5','-i',main,'-frames:v','1','-q:v','2','-y',OUT/'yuvio-walkthrough-v7-poster.jpg'])
 report['sampledFrames']=times
-(ROOT/'v7-export-validation.json').write_text(json.dumps(report,indent=2))
+(ROOT/'v7-export-validation.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
 print(json.dumps(report,indent=2),flush=True)
