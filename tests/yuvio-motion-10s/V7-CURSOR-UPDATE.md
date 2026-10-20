@@ -13,4 +13,6 @@ Validation: existing 4080-frame motion audit and dedicated cursor audit pass; ni
 
 Final encoded validation: both MP4s fully decode, 2560 × 1440, 60 FPS, 4080 frames, exactly 68 seconds. H.264 delivery is 29.912 Mbit/s and 257,113,394 bytes; HEVC Main 10 delivery is 32,585,352 bytes. Both encoders report zero duplicated or dropped frames. Audio measures −16.008 LUFS and −4.725 dBTP. Twenty-five decoded frame samples were inspected across the complete journey. Exact file hashes and source fingerprints are recorded in `v7-export-validation.json`.
 
+Delivery commit: f18b27f994d61f4ef03d072f488449d92358921d. Both public media download URLs returned HTTP 200, with exact byte lengths and ETags matching their SHA-256 hashes. Only after this verification, the local ProRes master, duplicate outputs, sampled PNGs and temporary audio/progress files were removed (33 files, 6,139,486,646 bytes). Sparse checkout was reapplied to keep published deliverables out of the editable working folder; source and project assets remain available locally.
+
 Run `node tools/audit_v7.cjs` and `node tools/audit_cursor_v7.cjs` from this project. `tools/prepare_v7_assets.py` includes the current Card export derivatives so regeneration preserves the corrected neutral state.
