@@ -1,0 +1,137 @@
+{
+  "frames": 4080,
+  "seconds": 68,
+  "sourceTimeline": "V7 unchanged",
+  "geometry": {
+    "x": 39,
+    "y": 198,
+    "w": 324,
+    "h": 169,
+    "r": 18
+  },
+  "phases": {
+    "active": 3900,
+    "freezing": 17,
+    "frozen": 146,
+    "unfreezing": 17
+  },
+  "cardTimes": {
+    "freeze": 43.86269221892071,
+    "unfreeze": 46.57224565769102,
+    "duration": 0.28
+  },
+  "receipt": {
+    "routeStart": 34.48336069870902,
+    "start": 34.48336069870902,
+    "duration": 0.78,
+    "initialPaperExposed": 84,
+    "focusAfterReveal": true
+  },
+  "critical": [
+    {
+      "real": 17.45,
+      "frame": 1047,
+      "route": "send",
+      "card": {
+        "phase": "active",
+        "amount": 0,
+        "frozen": false,
+        "status": "Active",
+        "action": "Freeze",
+        "note": false
+      }
+    },
+    {
+      "real": 39.25,
+      "frame": 2355,
+      "route": "card",
+      "card": {
+        "phase": "active",
+        "amount": 0,
+        "frozen": false,
+        "status": "Active",
+        "action": "Freeze",
+        "note": false
+      }
+    },
+    {
+      "real": 43.65,
+      "frame": 2619,
+      "route": "card",
+      "card": {
+        "phase": "active",
+        "amount": 0,
+        "frozen": false,
+        "status": "Active",
+        "action": "Freeze",
+        "note": false
+      }
+    },
+    {
+      "real": 43.82,
+      "frame": 2629,
+      "route": "card",
+      "card": {
+        "phase": "active",
+        "amount": 0,
+        "frozen": false,
+        "status": "Active",
+        "action": "Freeze",
+        "note": false
+      }
+    },
+    {
+      "real": 44,
+      "frame": 2640,
+      "route": "card",
+      "card": {
+        "phase": "freezing",
+        "amount": 0.7450562240528926,
+        "frozen": false,
+        "status": "Active",
+        "action": "Freeze",
+        "note": false
+      }
+    },
+    {
+      "real": 46.9,
+      "frame": 2814,
+      "route": "card",
+      "card": {
+        "phase": "active",
+        "amount": 0,
+        "frozen": false,
+        "status": "Active",
+        "action": "Freeze",
+        "note": false
+      }
+    },
+    {
+      "real": 47.05,
+      "frame": 2823,
+      "route": "card",
+      "card": {
+        "phase": "active",
+        "amount": 0,
+        "frozen": false,
+        "status": "Active",
+        "action": "Freeze",
+        "note": false
+      }
+    },
+    {
+      "real": 47.2,
+      "frame": 2832,
+      "route": "card",
+      "card": {
+        "phase": "active",
+        "amount": 0,
+        "frozen": false,
+        "status": "Active",
+        "action": "Freeze",
+        "note": false
+      }
+    }
+  ],
+  "status": "passed"
+}
