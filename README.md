@@ -1,8 +1,10 @@
 # Video / YUVIO
 
-Текущая версия: **V9 Final — 68 секунд, 2560×1440, 60 FPS, H.264 29,9 Мбит/с**. Исправлены чёрные заливки SVG в навигации, согласованность вкладок, стыки push/pop и начало выдвижения чека. HEVC Main 10: 56,08 Мбит/с, без дополнительного квантования подготовленного входа кодировщика.
+Текущая версия: **V9 Final / Audio Balance — 68 секунд, 2560×1440, 60 FPS, H.264 29,9 Мбит/с**. Исправлены чёрные заливки SVG в навигации, согласованность вкладок, стыки push/pop и начало выдвижения чека. HEVC Main 10: 56,08 Мбит/с, без дополнительного квантования подготовленного входа кодировщика.
 
-[Скачать MP4](https://media.githubusercontent.com/media/DiverseDesignAI/Video/main/deliverables/yuvio-walkthrough-v9.mp4) · [10-bit HEVC](https://media.githubusercontent.com/media/DiverseDesignAI/Video/main/deliverables/yuvio-walkthrough-v9-10bit.mp4) · [Описание изменений](tests/yuvio-motion-10s/REVISION-9.md) · [Проверка экспорта](tests/yuvio-motion-10s/v9-export-validation.json)
+[Скачать MP4](https://media.githubusercontent.com/media/DiverseDesignAI/Video/main/deliverables/yuvio-walkthrough-v9-audio.mp4) · [10-bit HEVC](https://media.githubusercontent.com/media/DiverseDesignAI/Video/main/deliverables/yuvio-walkthrough-v9-audio-10bit.mp4) · [Описание изменений](tests/yuvio-motion-10s/REVISION-9.md) · [Проверка экспорта](tests/yuvio-motion-10s/v9-export-validation.json)
+
+Звук обновлён: музыка −35%, UI-эффекты +15%. [Проверка аудио и неизменности видео](tests/yuvio-motion-10s/v9-audio-balance-validation.json).
 
 Видео V9 хранятся через Git LFS. Для обычного скачивания используйте ссылки выше.
 

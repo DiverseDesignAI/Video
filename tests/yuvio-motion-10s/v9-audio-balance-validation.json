@@ -1,0 +1,51 @@
+{
+  "musicMultiplier": 0.65,
+  "effectsMultiplier": 1.15,
+  "musicDB": -3.7417328671428884,
+  "effectsDB": 1.213956807072233,
+  "existingPreviewGainPreserved": 1.08,
+  "durationSeconds": 68.0,
+  "integratedLUFS": -18.98053454033258,
+  "truePeakDBTP": -7.250781537441894,
+  "sourceReconstruction": "Two PCM stems sum exactly to approved V9 soundtrack; shared-compressor interaction and receipt cue retained in effects",
+  "normalization": "None after requested balance changes",
+  "deliveries": {
+    "yuvio-walkthrough-v9-audio.mp4": {
+      "bytes": 257054268,
+      "sha256": "4293a20dd643b530dcdea9e1b37ed63cae7fb4766f52d677efb50f93905c67fa",
+      "videoElementaryStreamHash": "SHA256=ab157ed195b901be81cead3511da4467ee35aa3a28922617563230e05a6b7781",
+      "videoMatchesV9": true,
+      "fullDecode": "passed",
+      "integratedLUFS": -18.988590006200337,
+      "truePeakDBTP": -7.246616363525391,
+      "duration": "68.000000",
+      "video": {
+        "codec_name": "h264",
+        "pix_fmt": "yuv420p",
+        "width": 2560,
+        "height": 1440,
+        "r_frame_rate": "60/1",
+        "nb_frames": "4080"
+      }
+    },
+    "yuvio-walkthrough-v9-audio-10bit.mp4": {
+      "bytes": 479458432,
+      "sha256": "b88c1d0b253e30ce1c2612fab798948277da668ea74f8a40a152c58d9e8ae597",
+      "videoElementaryStreamHash": "SHA256=24003088e95b5334a93ade6b0d9cb5bbaa40f0821e4cd73af158e28045e541be",
+      "videoMatchesV9": true,
+      "fullDecode": "passed",
+      "integratedLUFS": -18.988590006200337,
+      "truePeakDBTP": -7.246616363525391,
+      "duration": "68.000000",
+      "video": {
+        "codec_name": "hevc",
+        "pix_fmt": "yuv420p10le",
+        "width": 2560,
+        "height": 1440,
+        "r_frame_rate": "60/1",
+        "nb_frames": "4080"
+      }
+    }
+  },
+  "status": "passed"
+}
