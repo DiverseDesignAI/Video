@@ -1,10 +1,10 @@
 # Video / YUVIO
 
-Текущая версия: **V7 Final — 68 секунд, 2560×1440, 60 FPS, H.264 29,9 Мбит/с**. Финальный экспорт от 20 октября включает фирменный курсор, актуальные состояния Card из Figma и увеличенную типографику.
+Текущая версия: **V8 Final — 68 секунд, 2560×1440, 60 FPS, H.264 29,9 Мбит/с**. Финальный экспорт включает исправленные нажатия и переходы, согласованные состояния Card и выдвижение цифрового чека со звуком.
 
-[Скачать MP4](https://media.githubusercontent.com/media/DiverseDesignAI/Video/main/deliverables/yuvio-walkthrough-v7.mp4) · [10-bit HEVC](https://media.githubusercontent.com/media/DiverseDesignAI/Video/main/deliverables/yuvio-walkthrough-v7-10bit.mp4) · [Описание изменений](tests/yuvio-motion-10s/REVISION-7.md) · [Проверка экспорта](tests/yuvio-motion-10s/v7-export-validation.json)
+[Скачать MP4](https://media.githubusercontent.com/media/DiverseDesignAI/Video/main/deliverables/yuvio-walkthrough-v8.mp4) · [10-bit HEVC](https://media.githubusercontent.com/media/DiverseDesignAI/Video/main/deliverables/yuvio-walkthrough-v8-10bit.mp4) · [Описание изменений](tests/yuvio-motion-10s/REVISION-8.md) · [Проверка экспорта](tests/yuvio-motion-10s/v8-export-validation.json)
 
-Видео V7 хранятся через Git LFS. Для обычного скачивания используйте ссылки выше.
+Видео V8 хранятся через Git LFS. Для обычного скачивания используйте ссылки выше.
 
 [Последние правки и проверка финального рендера](tests/yuvio-motion-10s/V7-CURSOR-UPDATE.md).
 

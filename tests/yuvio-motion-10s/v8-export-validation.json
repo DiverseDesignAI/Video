@@ -1,0 +1,114 @@
+{
+  "sourceCommit": "846eb537a7e3cf59fc5ab56f10541106fc6024d6",
+  "renderer": "angle",
+  "deliveries": {
+    "yuvio-walkthrough-v8.mp4": {
+      "bytes": 257113392,
+      "sha256": "b6f87300b395c1ef7356e1eb965f42078348ba75f37869dfbb33833544238a2f",
+      "duration": "68.000000",
+      "video": {
+        "codec_name": "h264",
+        "profile": "100",
+        "pix_fmt": "yuv420p",
+        "width": 2560,
+        "height": 1440,
+        "r_frame_rate": "60/1",
+        "nb_frames": "4080",
+        "bit_rate": "29912098",
+        "color_space": "bt709",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709"
+      },
+      "fullDecode": "passed"
+    },
+    "yuvio-walkthrough-v8-10bit.mp4": {
+      "bytes": 32609381,
+      "sha256": "628556ceb3dcdc36f00ba18ccda89146aa28abdc351a2c606500d277b88df77f",
+      "duration": "68.000000",
+      "video": {
+        "codec_name": "hevc",
+        "profile": "Main 10",
+        "pix_fmt": "yuv420p10le",
+        "width": 2560,
+        "height": 1440,
+        "r_frame_rate": "60/1",
+        "nb_frames": "4080",
+        "bit_rate": "3499848",
+        "color_space": "bt709",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709"
+      },
+      "fullDecode": "passed"
+    }
+  },
+  "audio": {
+    "sampleRate": 48000,
+    "integratedLUFS": -16.0082210718868,
+    "truePeakDBTP": -4.723178362369309
+  },
+  "criticalFrameDecode": {
+    "frames": 359,
+    "ranges": [
+      [
+        1035,
+        1065
+      ],
+      [
+        2352,
+        2364
+      ],
+      [
+        2604,
+        2844
+      ],
+      [
+        2063,
+        2136
+      ]
+    ],
+    "cardHeaderChecks": 241,
+    "minimumHeaderPixels": 158,
+    "status": "passed"
+  },
+  "sampledFrames": [
+    3.2,
+    6.9,
+    12.38,
+    15.2,
+    17.25,
+    17.45,
+    17.65,
+    19.2,
+    23.5,
+    31.5,
+    33.45,
+    34.5,
+    34.75,
+    34.9,
+    35.15,
+    35.5,
+    35.95,
+    36.6,
+    37.3,
+    39.25,
+    41.4,
+    43.65,
+    43.767,
+    43.82,
+    44,
+    44.2,
+    45.1,
+    46.5,
+    46.8,
+    46.9,
+    47.05,
+    47.2,
+    49.8,
+    52.4,
+    55.2,
+    58.6,
+    62.2,
+    66.5
+  ],
+  "status": "passed"
+}

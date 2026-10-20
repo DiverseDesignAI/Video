@@ -1,0 +1,26 @@
+{
+  "commit": "846eb537a7e3cf59fc5ab56f10541106fc6024d6",
+  "renderer": "angle",
+  "frames": 4080,
+  "fps": 60,
+  "width": 2560,
+  "height": 1440,
+  "sourceHashes": {
+    "CursorV7.tsx": "1a90165c5ed52591c767081fb6c30b27c688dae1f9408e7c4b4991a2f5797aba",
+    "index.tsx": "136eea195d23d7dc2638ad334ae9e66979b9189b3458930e91d1e8dea904429b",
+    "IPhone16Pro.tsx": "38a226d2d84b823f8aa74e4be577476c0dd951d4190c2d543ee0fc9b2e2f74ba",
+    "motionV5.ts": "3ca6aefe1254437faadc012c34cc05ca7ef53830adf96f1e8ed72872f6ba7261",
+    "motionV6.ts": "f14555f087185123cc908d1379a32dab49c7523bd56b40e1a4ed5c9b7221559d",
+    "motionV7.ts": "d2a20d6fe1dd63885d96cbcf1202421baafb0df80549b83af1505be446edfdcd",
+    "motionV8.ts": "8041f9464e6963a3ee48918ce03f5753e4c11910f9f6c77505f1c03c4d10992c",
+    "NativeControlV8.tsx": "d19ebc6bd6b16d02985f9e76f21e8198e8e05293c80b5acd89d6d43905ac41fb",
+    "ScreensV5.tsx": "b81c2673536fc33ff9204672ab57da6c83a38e983f3b0b8bcebfbb8ad8f721a2",
+    "ScreensV7.tsx": "4f6a8ec7fa836493c55bff6c6e4c122a37f352d5fbca6cd87637eda77d75da46",
+    "ScreensV8.tsx": "2127769a2585fb9a6345b98998df21790964e5e2d8186a4ca8e717c58db22da6",
+    "v8-assets.json": "3b694a8a8ca9df718b679aeabaf2a3e2d891879fbf657589e5dd62b726640d52",
+    "YuvioV5.tsx": "0b068deb74246b78be69ea01c6627c2a7519a5b28ed116f1e0c2fd82c57b5a68",
+    "YuvioV7.tsx": "e0008a98b8028e4a2c4c76db47189950246832e172a7c0bad09765abd8e41a8e",
+    "YuvioV8.tsx": "fcb1b15339f42e837ae48ee696ac00bc8217bebd94668ceca32102789f30a0dc"
+  },
+  "audioHash": "ec70ee145bb8e416d75e8e99fc8e1257e6b3918b1574be0c42afe61d433bd066"
+}
