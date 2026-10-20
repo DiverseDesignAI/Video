@@ -1,0 +1,12 @@
+{
+  "seconds": 68.0,
+  "sampleRate": 48000,
+  "integratedLUFS": -16.0,
+  "truePeakDBTP": -4.665840334837285,
+  "receiptCue": {
+    "start": 34.72336069870902,
+    "duration": 0.78,
+    "source": "Original softly filtered synthesized noise and tonal glide, no external recording"
+  },
+  "music": "Approved V7 final mix preserved"
+}
