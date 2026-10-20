@@ -20,7 +20,7 @@ for name in ['yuvio-walkthrough-v9.mp4','yuvio-walkthrough-v9-10bit.mp4']:
  assert (v['width'],v['height'],v['r_frame_rate'],v['nb_frames'])==(2560,1440,'60/1','4080')
  assert abs(float(data['format']['duration'])-68)<.02
  assert a['sample_rate']=='48000' and a['channels']==2
- if name.endswith('-10bit.mp4'):assert v['codec_name']=='hevc' and v['pix_fmt']=='yuv420p10le' and 20_000_000<int(v['bit_rate'])<30_000_000
+ if name.endswith('-10bit.mp4'):assert v['codec_name']=='hevc' and v['pix_fmt']=='yuv420p10le' and int(v['bit_rate'])>20_000_000
  else:assert v['codec_name']=='h264' and 25_000_000<int(v['bit_rate'])<40_000_000
  run(['-i',p,'-map','0:v:0','-map','0:a:0','-c:v','rawvideo','-c:a','pcm_s16le','-f','null','-'])
  report['deliveries'][name]={'bytes':p.stat().st_size,'sha256':hashlib.file_digest(p.open('rb'),'sha256').hexdigest(),'duration':data['format']['duration'],'video':{k:v.get(k) for k in ['codec_name','profile','pix_fmt','width','height','r_frame_rate','nb_frames','bit_rate','color_space','color_transfer','color_primaries']},'fullDecode':'passed'}
@@ -66,15 +66,34 @@ for f in navframes:
 assert proc.wait()==0
 report['encodedNavigation']={'frames':len(black_checks),'blackIconPixels':0,'delivery':'HEVC Main 10','status':'passed'}
 
+# QP0/lossless applies to the prepared 10-bit 4:2:0 coding input, not to the
+# earlier browser/ProRes/chroma-subsampling stages. Check sample values exactly.
+sample_times=[6.9,25.8,34.5,34.8,35.2,39.3,44.2,47.05,51.8,53.4,57.5,66.5]
+master=WORK/'yuvio-v9-master.mkv';exact=[]
+for t in sample_times:
+ args=['-frames:v','1','-an','-pix_fmt','yuv420p10le','-f','rawvideo','-']
+ original=run(['-ss',t,'-i',master,*args]).stdout
+ encoded=run(['-ss',t,'-i',main,*args]).stdout
+ assert original==encoded,('HEVC changed prepared 10-bit samples',t)
+ exact.append({'seconds':t,'sha256':hashlib.sha256(encoded).hexdigest()})
+report['preparedYUVSampleEquality']={'samples':exact,'status':'passed','scope':'Exact equality to ProRes converted to delivery 10-bit 4:2:0; not a lossless claim for browser capture or ProRes'}
+
 times=[3.2,6.9,12.38,15.2,17.25,17.45,17.65,19.2,23.5,31.5,33.45,34.5,34.75,34.9,35.15,35.5,35.95,36.6,37.3,39.25,41.4,43.65,43.767,43.82,44,44.2,45.1,46.5,46.8,46.9,47.05,47.2,49.8,52.4,55.2,58.6,62.2,66.5]
 thumbs=[]
+gradient_checks=[]
+reference=np.asarray(Image.open(ROOT/'public/v7/normal.png').convert('RGB'))[200:1200,2300:2500].astype(np.int16)
 for i,t in enumerate(times):
  p=WORK/f'v9-encoded-{i:02}.png';run(['-ss',t,'-i',main,'-frames:v','1','-y',p])
+ if t in [6.9,35.5,55.2]:
+  actual=np.asarray(Image.open(p).convert('RGB'))[200:1200,2300:2500].astype(np.int16)
+  error=np.abs(actual-reference);mae=float(error.mean());assert mae<3,('Background gradient damage',t,mae)
+  gradient_checks.append({'seconds':t,'meanAbsolute8bitRGBError':mae,'p99AbsoluteError':float(np.percentile(error,99))})
  im=Image.open(p).convert('RGB').resize((640,360));ImageDraw.Draw(im).text((12,12),f'{t:.3f}s',fill='white');thumbs.append(im)
 sheet=Image.new('RGB',(1920,360*((len(thumbs)+2)//3)))
 for i,im in enumerate(thumbs):sheet.paste(im,((i%3)*640,(i//3)*360))
 sheet.save(WORK/'v9-export-contact.jpg',quality=94)
 run(['-ss','66.5','-i',main,'-frames:v','1','-q:v','2','-y',OUT/'yuvio-walkthrough-v9-poster.jpg'])
 report['sampledFrames']=times;report['status']='passed'
+report['darkGradientReferenceChecks']={'region':[2300,200,200,1000],'reference':'Approved v7/normal.png, unobstructed background','checks':gradient_checks,'status':'passed'}
 (ROOT/'v9-export-validation.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
 print(json.dumps(report,indent=2),flush=True)

@@ -1,12 +1,12 @@
 # Video / YUVIO
 
-Текущая версия: **V8 Final — 68 секунд, 2560×1440, 60 FPS, H.264 29,9 Мбит/с**. Финальный экспорт включает исправленные нажатия и переходы, согласованные состояния Card и выдвижение цифрового чека со звуком.
+Текущая версия: **V9 Final — 68 секунд, 2560×1440, 60 FPS, H.264 29,9 Мбит/с**. Исправлены чёрные заливки SVG в навигации, согласованность вкладок, стыки push/pop и начало выдвижения чека. HEVC Main 10: 56,08 Мбит/с, без дополнительного квантования подготовленного входа кодировщика.
 
-[Скачать MP4](https://media.githubusercontent.com/media/DiverseDesignAI/Video/main/deliverables/yuvio-walkthrough-v8.mp4) · [10-bit HEVC](https://media.githubusercontent.com/media/DiverseDesignAI/Video/main/deliverables/yuvio-walkthrough-v8-10bit.mp4) · [Описание изменений](tests/yuvio-motion-10s/REVISION-8.md) · [Проверка экспорта](tests/yuvio-motion-10s/v8-export-validation.json)
+[Скачать MP4](https://media.githubusercontent.com/media/DiverseDesignAI/Video/main/deliverables/yuvio-walkthrough-v9.mp4) · [10-bit HEVC](https://media.githubusercontent.com/media/DiverseDesignAI/Video/main/deliverables/yuvio-walkthrough-v9-10bit.mp4) · [Описание изменений](tests/yuvio-motion-10s/REVISION-9.md) · [Проверка экспорта](tests/yuvio-motion-10s/v9-export-validation.json)
 
-Видео V8 хранятся через Git LFS. Для обычного скачивания используйте ссылки выше.
+Видео V9 хранятся через Git LFS. Для обычного скачивания используйте ссылки выше.
 
-[Последние правки и проверка финального рендера](tests/yuvio-motion-10s/V7-CURSOR-UPDATE.md).
+[История правок V7](tests/yuvio-motion-10s/V7-CURSOR-UPDATE.md).
 
 Рабочий репозиторий для анимаций и монтажа. Исходники и инструкции хранятся здесь. `node_modules`, кэши и временные видео не коммитятся.
 

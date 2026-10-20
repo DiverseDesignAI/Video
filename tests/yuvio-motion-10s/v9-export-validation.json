@@ -1,0 +1,221 @@
+{
+  "sourceCommit": "66c9adb5f3c263528acccc7c7831b7d51bdec961",
+  "renderer": "angle",
+  "deliveries": {
+    "yuvio-walkthrough-v9.mp4": {
+      "bytes": 257113308,
+      "sha256": "57bdc1c5421071366c635c0973139aa89acf92daef38a599cbf58ca9ef087e56",
+      "duration": "68.000000",
+      "video": {
+        "codec_name": "h264",
+        "profile": "100",
+        "pix_fmt": "yuv420p",
+        "width": 2560,
+        "height": 1440,
+        "r_frame_rate": "60/1",
+        "nb_frames": "4080",
+        "bit_rate": "29912099",
+        "color_space": "bt709",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709"
+      },
+      "fullDecode": "passed"
+    },
+    "yuvio-walkthrough-v9-10bit.mp4": {
+      "bytes": 479517452,
+      "sha256": "872286be065761acbf46a4f78b906a8ee6a7d7d6c2bcaea18c3050f70faedd0d",
+      "duration": "68.000000",
+      "video": {
+        "codec_name": "hevc",
+        "profile": "Main 10",
+        "pix_fmt": "yuv420p10le",
+        "width": 2560,
+        "height": 1440,
+        "r_frame_rate": "60/1",
+        "nb_frames": "4080",
+        "bit_rate": "56077435",
+        "color_space": "bt709",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709"
+      },
+      "fullDecode": "passed"
+    }
+  },
+  "audio": {
+    "sampleRate": 48000,
+    "integratedLUFS": -16.0082689350593,
+    "truePeakDBTP": -4.718111453052418
+  },
+  "criticalFrameDecode": {
+    "frames": 495,
+    "ranges": [
+      [
+        1035,
+        1065
+      ],
+      [
+        1539,
+        1563
+      ],
+      [
+        2289,
+        2313
+      ],
+      [
+        3195,
+        3219
+      ],
+      [
+        2349,
+        2373
+      ],
+      [
+        3099,
+        3123
+      ],
+      [
+        3435,
+        3465
+      ],
+      [
+        2604,
+        2844
+      ],
+      [
+        2061,
+        2127
+      ]
+    ],
+    "cardHeaderChecks": 241,
+    "minimumHeaderPixels": 150,
+    "status": "passed"
+  },
+  "encodedNavigation": {
+    "frames": 63,
+    "blackIconPixels": 0,
+    "delivery": "HEVC Main 10",
+    "status": "passed"
+  },
+  "preparedYUVSampleEquality": {
+    "samples": [
+      {
+        "seconds": 6.9,
+        "sha256": "6756bbef768a931c2e829542adef87d8bde32c9ab3973a8f78089e5a58d2bbff"
+      },
+      {
+        "seconds": 25.8,
+        "sha256": "bf19716e9d40d1653507566aa05da420a574c9ae9284097f9a0d7e6bbfe7d71e"
+      },
+      {
+        "seconds": 34.5,
+        "sha256": "ebca7af7d912f37ddd8690381f481dbc4537a6d57c3ad0ba29878232b4a0e1f1"
+      },
+      {
+        "seconds": 34.8,
+        "sha256": "f64f16e92a19851027ffdfba841199552be6ccdd6b0028dd68eb08895e464597"
+      },
+      {
+        "seconds": 35.2,
+        "sha256": "ad0978b7e2b730cff9eeeb203104677f26c8acff9f2599835f3caf798a428079"
+      },
+      {
+        "seconds": 39.3,
+        "sha256": "af738a885bd9f88b6fe68c8ded179901d28f05711cd77204502d3d490e3db5dc"
+      },
+      {
+        "seconds": 44.2,
+        "sha256": "f17409e426424d083a2798cb234230a068ee4da551c304f175b94d702a64b225"
+      },
+      {
+        "seconds": 47.05,
+        "sha256": "d9e31c909b8b646ed3aa8171326a600cfa4fafc5a19e4053c8e339c2a4c65f27"
+      },
+      {
+        "seconds": 51.8,
+        "sha256": "331eb73621a8110ced0eb880055a524ad6601ddbce4334ecb87cedf998d7bc78"
+      },
+      {
+        "seconds": 53.4,
+        "sha256": "9beeb4460ededf5928a8a9ce1194a8a1f713e7023f11dd661103b0ff36f3693a"
+      },
+      {
+        "seconds": 57.5,
+        "sha256": "814865d3770c38696cd5bacc55638186501e3964a9a807aa5ef006f4d2f9a2ce"
+      },
+      {
+        "seconds": 66.5,
+        "sha256": "9ef52152159f6635d789df6ddf07807b364415a763b058203ee25aa7deff7de4"
+      }
+    ],
+    "status": "passed",
+    "scope": "Exact equality to ProRes converted to delivery 10-bit 4:2:0; not a lossless claim for browser capture or ProRes"
+  },
+  "sampledFrames": [
+    3.2,
+    6.9,
+    12.38,
+    15.2,
+    17.25,
+    17.45,
+    17.65,
+    19.2,
+    23.5,
+    31.5,
+    33.45,
+    34.5,
+    34.75,
+    34.9,
+    35.15,
+    35.5,
+    35.95,
+    36.6,
+    37.3,
+    39.25,
+    41.4,
+    43.65,
+    43.767,
+    43.82,
+    44,
+    44.2,
+    45.1,
+    46.5,
+    46.8,
+    46.9,
+    47.05,
+    47.2,
+    49.8,
+    52.4,
+    55.2,
+    58.6,
+    62.2,
+    66.5
+  ],
+  "status": "passed",
+  "darkGradientReferenceChecks": {
+    "region": [
+      2300,
+      200,
+      200,
+      1000
+    ],
+    "reference": "Approved v7/normal.png, unobstructed background",
+    "checks": [
+      {
+        "seconds": 6.9,
+        "meanAbsolute8bitRGBError": 0.453485,
+        "p99AbsoluteError": 1.0
+      },
+      {
+        "seconds": 35.5,
+        "meanAbsolute8bitRGBError": 0.453485,
+        "p99AbsoluteError": 1.0
+      },
+      {
+        "seconds": 55.2,
+        "meanAbsolute8bitRGBError": 0.453485,
+        "p99AbsoluteError": 1.0
+      }
+    ],
+    "status": "passed"
+  }
+}
